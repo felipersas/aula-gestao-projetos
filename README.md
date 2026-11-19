@@ -41,6 +41,15 @@ Este repositório reúne as atividades das aulas, o Desafio de Gestão de Portf�
 | 2 | Relatório final consolidado (estrutura de 14 itens) | [avaliacao-2-relatorio-final.docx](projeto-fieldops/avaliacao-2-relatorio-final.docx) |
 | 2 | Apresentação final e roteiro | [apresentacao-final.pptx](projeto-fieldops/apresentacao-final.pptx) · [roteiro](projeto-fieldops/roteiro-apresentacao-final.md) |
 
+## Formatos disponíveis
+
+Todo artefato está em mais de um formato, com o mesmo nome de arquivo na mesma pasta:
+
+- `.md` (Markdown): formato pedido na Aula 01 e usado nos modelos do professor (EAP e Cronograma). Renderiza no GitHub, com os diagramas Mermaid.
+- `.docx` (Word) e `.pdf`: versões geradas a partir do `.md` para entrega em documento. Os diagramas Mermaid viram imagens e as tabelas largas ficam em página paisagem.
+- Os termos de abertura, o relatório do desafio e as avaliações 1 e 2 já eram `.docx` (modelos 4.1 e Relatório Final); ganharam o `.pdf` correspondente.
+- Para regerar as versões a partir dos `.md`: `python3 _base/gerar_exportacoes.py` (precisa de pandoc, Google Chrome e python-docx).
+
 ## Como ler os artefatos
 
 - Os `.md` usam tabelas e diagramas Mermaid que o GitHub renderiza. Os gráficos estão em PNG na mesma pasta de cada atividade.
