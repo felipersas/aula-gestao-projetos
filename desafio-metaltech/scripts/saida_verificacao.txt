@@ -1,0 +1,82 @@
+== Matriz de priorizacao
+P4 4.55 Prioridade {'AE': 4, 'BC': 5, 'RI': 5, 'PR': 5, 'SI': 5, 'VR': 4}
+P5 4.5 Prioridade {'AE': 5, 'BC': 5, 'RI': 3, 'PR': 4, 'SI': 5, 'VR': 4}
+P2 4.0 Prioridade {'AE': 5, 'BC': 4, 'RI': 3, 'PR': 4, 'SI': 3, 'VR': 3}
+P6 3.9 Prioridade {'AE': 3, 'BC': 3, 'RI': 5, 'PR': 5, 'SI': 5, 'VR': 5}
+P1 3.2 Prioridade {'AE': 5, 'BC': 2, 'RI': 1, 'PR': 2, 'SI': 5, 'VR': 2}
+P7 2.7 Posterior {'AE': 3, 'BC': 2, 'RI': 3, 'PR': 3, 'SI': 3, 'VR': 2}
+P8 1.65 Adiado {'AE': 2, 'BC': 2, 'RI': 1, 'PR': 1, 'SI': 2, 'VR': 1}
+P3 1.45 Adiado {'AE': 2, 'BC': 1, 'RI': 1, 'PR': 1, 'SI': 2, 'VR': 1}
+TOP5 == priorizados: True
+Margem P1 x P7: 0.5
+== Sensibilidade (top-5 igual?)
+AE -10 p.p.        top5=True  rank=P4,P5,P6,P2,P1,P7,P8,P3
+AE +10 p.p.        top5=True  rank=P5,P4,P2,P6,P1,P7,P8,P3
+BC -10 p.p.        top5=True  rank=P4,P5,P6,P2,P1,P7,P8,P3
+BC +10 p.p.        top5=True  rank=P4,P5,P2,P6,P1,P7,P8,P3
+RI -10 p.p.        top5=True  rank=P5,P4,P2,P6,P1,P7,P8,P3
+RI +10 p.p.        top5=True  rank=P4,P5,P6,P2,P1,P7,P8,P3
+PR -10 p.p.        top5=True  rank=P5,P4,P2,P6,P1,P7,P8,P3
+PR +10 p.p.        top5=True  rank=P4,P5,P6,P2,P1,P7,P8,P3
+SI -10 p.p.        top5=True  rank=P4,P5,P2,P6,P1,P7,P8,P3
+SI +10 p.p.        top5=True  rank=P4,P5,P6,P2,P1,P7,P8,P3
+VR -10 p.p.        top5=True  rank=P4,P5,P2,P6,P1,P7,P8,P3
+VR +10 p.p.        top5=True  rank=P4,P5,P6,P2,P1,P7,P8,P3
+pesos iguais       top5=True  rank=P4,P5,P6,P2,P1,P7,P8,P3
+foco em custo      top5=True  rank=P4,P5,P2,P6,P1,P7,P8,P3
+foco em risco      top5=True  rank=P4,P5,P6,P2,P1,P7,P8,P3
+foco estratégico   top5=True  rank=P5,P4,P2,P1,P6,P7,P8,P3
+Monte Carlo: P(top5 igual) = 0.966 ; P(P1>P7) = 0.966
+== Cenarios
+A {'projetos': ['P1', 'P2', 'P4', 'P5', 'P6'], 'custo': 2100, 'pct': 84.0, 'reserva': 400, 'score': 20.15, 'metas_cobertas': ['Produtividade', 'Paradas', 'Custos', 'Retrabalho'], 'n_metas': 4, 'n_alto_risco': 1, 'caber': True}
+B {'projetos': ['P1', 'P2', 'P5', 'P6', 'P7'], 'custo': 2450, 'pct': 98.0, 'reserva': 50, 'score': 18.3, 'metas_cobertas': ['Produtividade', 'Paradas', 'Retrabalho'], 'n_metas': 3, 'n_alto_risco': 1, 'caber': True}
+C {'projetos': ['P2', 'P4', 'P5', 'P6', 'P7'], 'custo': 1800, 'pct': 72.0, 'reserva': 700, 'score': 19.65, 'metas_cobertas': ['Paradas', 'Custos', 'Retrabalho'], 'n_metas': 3, 'n_alto_risco': 0, 'caber': True}
+D {'projetos': ['P1', 'P8'], 'custo': 2400, 'pct': 96.0, 'reserva': 100, 'score': 4.85, 'metas_cobertas': ['Produtividade'], 'n_metas': 1, 'n_alto_risco': 2, 'caber': True}
+A + P8 = 3600
+Melhor subconjunto 4 metas c/ reserva>=16%: {'ps': ('P1', 'P2', 'P4', 'P5', 'P6'), 'custo': 2100, 'score': 20.15, 'metas': 4}
+Top-5 subconjuntos 4 metas (qualquer reserva):
+   {'ps': ('P1', 'P2', 'P4', 'P5', 'P6'), 'custo': 2100, 'score': 20.15, 'metas': 4}
+== Orcamento: priorizados 2100 reserva 400 total 2500 teto 2500
+Programas: {'A': 1500, 'B': 600} carteira total: 5400
+Trimestres: [1037.5, 975.0, 87.5, 0.0] alt: [1262.5, 750.0, 87.5, 0.0]
+Mensal: [345.8, 345.8, 345.8, 350.0, 312.5, 312.5, 87.5, 0.0, 0.0, 0.0, 0.0, 0.0]
+Acumulado: [345.8, 691.7, 1037.5, 1387.5, 1700.0, 2012.5, 2100.0, 2100.0, 2100.0, 2100.0, 2100.0, 2100.0]
+Trimestre por programa: {'A': [787.5, 712.5, 0.0, 0.0], 'B': [250.0, 262.5, 87.5, 0.0]}
+Categorias: {'A': 700, 'B': 250, 'C': 420, 'D': 230, 'E': 250, 'F': 250}
+== Recursos (adotado)
+EA1   [100, 100, 100, 100, 100, 100, 30, 30, 30, 0, 0, 0] pico 100 meses [1, 2, 3, 4, 5, 6]
+EA2   [100, 100, 100, 100, 100, 100, 30, 30, 30, 0, 0, 0] pico 100 meses [1, 2, 3, 4, 5, 6]
+TI1   [70, 70, 100, 100, 30, 30, 30, 30, 30, 30, 30, 30] pico 100 meses [3, 4]
+TI2   [20, 20, 20, 50, 50, 50, 50, 20, 20, 20, 20, 20] pico 50 meses [4, 5, 6, 7]
+QUAL  [100, 100, 100, 100, 100, 100, 100, 40, 40, 40, 40, 40] pico 100 meses [1, 2, 3, 4, 5, 6, 7]
+MAN   [100, 100, 100, 100, 20, 20, 30, 30, 30, 30, 30, 30] pico 100 meses [1, 2, 3, 4]
+GP    [84, 62, 66, 73, 70, 70, 46, 25, 25, 25, 25, 25] pico 84 meses [1]
+GP sem coordenadores: [115, 85, 90, 100, 95, 95, 55, 25, 25, 25, 25, 25]
+GP com coordenadores: [83.5, 62.5, 66.0, 73.0, 69.5, 69.5, 46.0, 25.0, 25.0, 25.0, 25.0, 25.0] | com P7: [83.5, 62.5, 66.0, 73.0, 69.5, 69.5, 70.5, 42.5, 42.5, 42.5, 46.0, 25.0]
+EA2 literal (sem absorver consultivo): [110, 110, 110, 110, 100, 100, 0, 0, 0, 0, 0, 0]
+Conflitos cenario ingenuo: [('EA1', 1, 150), ('EA1', 2, 150), ('EA1', 3, 150), ('EA1', 4, 150), ('QUAL', 1, 200), ('QUAL', 2, 200), ('QUAL', 3, 200), ('MAN', 1, 120), ('MAN', 2, 120), ('GP', 1, 185), ('GP', 2, 140), ('GP', 3, 115)]
+Conflitos adotado: [] | com P7: []
+MAT_P7: {'EA1': [100, 100, 100, 100, 100, 100, 70, 70, 70, 40, 40, 0], 'EA2': [100, 100, 100, 100, 100, 100, 30, 30, 30, 0, 0, 0], 'TI1': [70, 70, 100, 100, 30, 30, 80, 80, 80, 80, 80, 30], 'TI2': [20, 20, 20, 50, 50, 50, 80, 50, 50, 50, 50, 20], 'QUAL': [100, 100, 100, 100, 100, 100, 100, 40, 40, 40, 40, 40], 'MAN': [100, 100, 100, 100, 20, 20, 30, 30, 30, 30, 30, 30], 'GP': [84, 62, 66, 73, 70, 70, 70, 42, 42, 42, 46, 25]}
+== Riscos
+1 R03 0.7 0.4 0.28 Alta Benefício parcial e metas sem folga
+2 R01 0.5 0.4 0.2 Alta Atraso ou estouro no P1
+3 R02 0.5 0.4 0.2 Alta GP como ponto único de falha
+4 R07 0.3 0.4 0.12 Média Dependência de poucos especialistas
+5 R10 0.3 0.4 0.12 Média Linha de base inexistente ou contestada
+6 R12 0.3 0.4 0.12 Média Parada não planejada na instalação do P1
+7 R04 0.5 0.2 0.1 Média Baixa adoção pelos operadores
+8 R05 0.5 0.2 0.1 Média P2 sem dados de IoT
+9 R06 0.5 0.2 0.1 Média Prazo de entrega de equipamentos
+10 R11 0.5 0.2 0.1 Média Integração do P1 com sistemas existentes
+11 R09 0.3 0.2 0.06 Média TI1 sem folga no m3-m4
+12 R14 0.3 0.2 0.06 Média Pressão para antecipar P3, P7 ou P8
+13 R08 0.5 0.1 0.05 Baixa Atraso do P6 por efeito cascata
+14 R13 0.9 0.05 0.045 Baixa Reserva insuficiente para o P7 no G2
+EMV total: 212.0 [('P1: P = 0,5 x 30% de R$ 900 mil (faixa 20-40%)', 135.0), ('P2: P = 0,3 x 20% de R$ 450 mil', 27.0), ('P4, P5, P6: P = 0,3 x 10% de R$ 750 mil', 22.5), ('Analista de planejamento: P = 0,5 x R$ 55 mil', 27.5)]
+== Metas
+{'r': 1.0, 'prod': 12.0, 'par': 20.0, 'ret': 30.0, 'prod_falta': 3.0}
+{'r': 0.9, 'prod': 10.8, 'par': 18.0, 'ret': 27.0, 'prod_falta': 4.199999999999999}
+{'r': 0.8, 'prod': 9.600000000000001, 'par': 16.0, 'ret': 24.0, 'prod_falta': 5.399999999999999}
+{'r': 0.7, 'prod': 8.399999999999999, 'par': 14.0, 'ret': 21.0, 'prod_falta': 6.600000000000001}
+Custos (H): {'refugo': 2.0, 'retrabalho': 1.7999999999999998, 'paradas': 2.0} soma 5.8 resto 4.2 fracao necessaria (12%) 39.2
+Custo por p.p.: {'P1': 75.0, 'P2': 22.5, 'P4': 10.0, 'P5': 11.7, 'P8': 75.0}
