@@ -1,0 +1,118 @@
+repo,number,title,state,milestone,sprint,created,closed,assignees,n_assignees,prio,epico,tipo,area,ac_marcados,ac_total,dod_marcados,dod_total
+backend,46,[Backend] Escopo de Arquitetura Inicial,OPEN,,,2026-08-12T01:03:00Z,,,0,,,,,0,0,0,0
+backend,45,[Backend] Diagrama de Classes do Domínio,OPEN,,,2026-08-12T01:02:30Z,,,0,,,,,0,0,0,0
+backend,39,API: notificacoes push de nova atribuicao de inspecao,OPEN,,,2026-08-11T01:11:54Z,,,0,P1,EP-10,feature,,0,6,0,16
+backend,38,API: exportacao CSV de inspecoes e nao conformidades,OPEN,,,2026-08-11T01:11:53Z,,,0,P1,EP-10,feature,,0,5,0,16
+backend,37,API: geracao de relatorio PDF da inspecao,OPEN,,,2026-08-11T01:11:51Z,,,0,P1,EP-10,feature,,0,7,0,16
+backend,36,API: endpoints de indicadores do dashboard administrativo,OPEN,,,2026-08-11T01:11:50Z,,,0,P1,EP-10,feature,,0,6,0,16
+backend,35,API: revisao de seguranca do AC-SECURITY antes da release,OPEN,Sprint 7,7,2026-08-11T01:11:48Z,,,0,P0,EP-10,test,seguranca,0,9,0,16
+backend,34,API: OpenAPI final revisado e README de execucao,OPEN,Sprint 8,8,2026-08-11T01:11:47Z,,,0,P0,EP-10,docs,,0,8,0,16
+backend,33,API: containerizacao e ambiente de demonstracao,OPEN,Sprint 8,8,2026-08-11T01:11:45Z,,,0,P0,EP-10,infra,,0,8,0,16
+backend,32,API: dados de demonstracao reproduziveis por seed,OPEN,Sprint 8,8,2026-08-11T01:11:44Z,,,0,P0,EP-10,infra,,0,8,0,16
+backend,31,API: testes de integracao dos fluxos criticos,OPEN,Sprint 7,7,2026-08-11T01:11:42Z,,,0,P0,EP-10,test,,0,7,0,16
+backend,30,API: fluxo de correcao apos reprovacao com preservacao do historico,OPEN,Sprint 7,7,2026-08-11T01:11:41Z,,,0,P0,EP-09,feature,revisao,0,8,0,16
+backend,29,API: auditoria de acoes criticas e endpoint de historico da inspecao,OPEN,Sprint 7,7,2026-08-11T01:11:39Z,,,0,P0,EP-09,feature,revisao,0,9,0,16
+backend,28,API: ciclos de revisao com aprovacao e reprovacao motivada,OPEN,Sprint 7,7,2026-08-11T01:11:37Z,,,0,P0,EP-09,feature,revisao,0,11,0,16
+backend,27,API: sincronizacao de arquivos com estado individual por evidencia,OPEN,Sprint 6,6,2026-08-11T01:11:36Z,,,0,P0,EP-08,feature,evidencias,0,7,0,16
+backend,26,API: deteccao de conflito por versao e resposta de conflito para o dispositivo,OPEN,Sprint 6,6,2026-08-11T01:11:34Z,,,0,P0,EP-08,feature,sync,0,7,0,16
+backend,25,API: endpoint de pull por cursor com alteracoes incrementais,OPEN,Sprint 6,6,2026-08-11T01:11:32Z,,,0,P0,EP-08,feature,sync,0,9,0,16
+backend,24,API: endpoint de push da sincronizacao com idempotencia por operacao,OPEN,Sprint 6,6,2026-08-11T01:11:31Z,,,0,P0,EP-08,feature,sync,0,11,0,16
+backend,23,API: registro de nao conformidades com criticidade e evidencia obrigatoria,OPEN,Sprint 5,5,2026-08-11T01:11:29Z,,,0,P0,EP-07,feature,evidencias,0,9,0,16
+backend,22,"API: upload, consulta e exclusao auditada de evidencias",OPEN,Sprint 5,5,2026-08-11T01:11:28Z,,,0,P0,EP-07,feature,evidencias,0,11,0,16
+backend,21,API: respostas do checklist com validacao por tipo e envio em lote,OPEN,Sprint 4,4,2026-08-11T01:11:26Z,,,0,P0,EP-06,feature,execucao,0,10,0,16
+backend,20,API: transicoes de execucao (start e submit) com validacao de conclusao,OPEN,Sprint 4,4,2026-08-11T01:11:24Z,,PD,1,P0,EP-06,feature,execucao,0,12,0,16
+backend,19,API: endpoints mobile de inspecoes com escopo do tecnico autenticado,OPEN,Sprint 4,4,2026-08-11T01:11:23Z,,PD,1,P0,EP-06,feature,execucao,0,9,0,16
+backend,18,"API: listagem administrativa de inspecoes com filtros, paginacao e atraso",OPEN,Sprint 4,4,2026-08-11T01:11:21Z,,PD,1,P0,EP-05,feature,planejamento,0,8,0,16
+backend,17,"API: maquina de estados da inspecao, atribuicao e cancelamento",OPEN,Sprint 3,3,2026-08-11T01:11:19Z,,GR,1,P0,EP-05,feature,planejamento,0,9,0,16
+backend,16,API: agendamento de inspecao com geracao do snapshot do checklist,OPEN,Sprint 3,3,2026-08-11T01:11:18Z,,GR,1,P0,EP-05,feature,planejamento,0,11,0,16
+backend,15,API: modelo de dados da inspecao e do snapshot de itens,OPEN,Sprint 3,3,2026-08-11T01:11:16Z,,JV,1,P0,EP-05,feature,planejamento,0,7,0,16
+backend,14,API: publicacao de versao imutavel do modelo com validacao de pendencias,CLOSED,Sprint 3,3,2026-08-11T01:11:14Z,2026-10-24T00:23:03Z,JV,1,P0,EP-04,feature,templates,0,10,0,16
+backend,13,"API: edicao de rascunho de modelo com secoes, itens e reordenacao",CLOSED,Sprint 3,3,2026-08-11T01:11:13Z,2026-10-23T22:37:06Z,JV,1,P0,EP-04,feature,templates,0,9,0,16
+backend,12,"API: modelo de dados de templates, versoes, secoes e itens",CLOSED,Sprint 3,3,2026-08-11T01:11:11Z,2026-09-29T00:16:54Z,JV,1,P0,EP-04,feature,templates,0,7,0,16
+backend,11,"API: CRUD de equipamentos, QR Code unico e consulta por QR",CLOSED,Sprint 2,2,2026-08-11T01:11:09Z,2026-09-26T01:12:09Z,JV,1,P0,EP-03,feature,cadastros,0,9,0,16
+backend,10,API: CRUD de locais de inspecao vinculados ao cliente,CLOSED,Sprint 2,2,2026-08-11T01:11:08Z,2026-09-26T00:45:08Z,GR,1,P0,EP-03,feature,cadastros,0,7,0,16
+backend,9,API: CRUD de clientes com inativacao logica,CLOSED,Sprint 2,2,2026-08-11T01:11:06Z,2026-09-26T00:45:06Z,GR,1,P0,EP-03,feature,cadastros,0,6,0,16
+backend,8,API: CRUD de usuarios com inativacao e redefinicao de acesso,CLOSED,Sprint 2,2,2026-08-11T01:11:04Z,2026-09-26T00:45:04Z,GR,1,P0,EP-02,feature,auth,0,10,0,16
+backend,7,API: autorizacao por perfil e escopo de visibilidade por usuario,CLOSED,Sprint 2,2,2026-08-11T01:11:02Z,2026-09-26T00:45:02Z,GR,1,P0,EP-02,feature,auth,0,7,0,16
+backend,6,"API: autenticacao JWT com login, refresh, logout e /me",CLOSED,Sprint 2,2,2026-08-11T01:11:01Z,2026-09-04T23:01:29Z,GR,1,P0,EP-02,feature,auth,0,10,0,16
+backend,5,"API: entidade User, migracao e hash seguro de senha",CLOSED,Sprint 2,2,2026-08-11T01:10:59Z,2026-09-04T23:14:29Z,GR,1,P0,EP-02,feature,auth,0,7,0,16
+backend,4,"API: pipeline de integracao continua (build, testes e analise estatica)",CLOSED,Sprint 1,1,2026-08-11T01:10:57Z,2026-10-24T00:23:15Z,PD,1,P0,EP-01,infra,,0,7,0,16
+backend,3,API: OpenAPI/Swagger e contrato inicial versionado,CLOSED,Sprint 1,1,2026-08-11T01:10:55Z,2026-09-15T00:06:36Z,BOT;JV;PD,3,P0,EP-01,setup,,0,7,0,16
+backend,2,"API: camada compartilhada de erros padronizados, requestId e paginacao",CLOSED,Sprint 1,1,2026-08-11T01:10:53Z,2026-08-12T23:15:00Z,JV,1,P0,EP-01,setup,ux,0,9,0,16
+backend,1,"API: bootstrap do projeto Spring Boot com PostgreSQL, Flyway e Docker Compose",CLOSED,Sprint 1,1,2026-08-11T01:10:51Z,2026-08-11T19:08:15Z,JV,1,P0,EP-01,setup,,0,8,0,16
+frontend,31,Web: comentarios de revisao por item,OPEN,,,2026-08-11T01:12:44Z,,AF,1,P1,EP-10,feature,revisao,0,6,0,16
+frontend,30,Web: exportacao CSV das listagens filtradas,OPEN,,,2026-08-11T01:12:43Z,,AF,1,P1,EP-10,feature,,0,6,0,16
+frontend,29,Web: tema escuro,OPEN,,,2026-08-11T01:12:41Z,,AF,1,P1,EP-10,feature,ux,0,6,0,16
+frontend,28,Web: dashboard administrativo com indicadores,CLOSED,,,2026-08-11T01:12:40Z,2026-11-09T20:33:00Z,AF,1,P1,EP-10,feature,,0,6,0,16
+frontend,27,Web: build de producao e publicacao do painel,OPEN,Sprint 8,8,2026-08-11T01:12:38Z,,AF,1,P0,EP-10,infra,,0,8,0,16
+frontend,26,"Web: revisao de estados de interface, acessibilidade e responsividade",OPEN,Sprint 7,7,2026-08-11T01:12:37Z,,AF,1,P0,EP-10,,ux,0,9,0,16
+frontend,25,Web: testes automatizados dos fluxos prioritarios do painel,OPEN,Sprint 7,7,2026-08-11T01:12:35Z,,AF,1,P0,EP-10,test,,0,7,0,16
+frontend,24,Web: consulta de historico e auditoria da inspecao,OPEN,Sprint 7,7,2026-08-11T01:12:33Z,,AF,1,P0,EP-09,feature,revisao,0,8,0,16
+frontend,23,Web: acoes de aprovar e reprovar com motivo obrigatorio,CLOSED,Sprint 7,7,2026-08-11T01:12:32Z,2026-11-04T22:24:45Z,AF,1,P0,EP-09,feature,revisao,0,10,0,16
+frontend,22,"Web: tela de revisao do checklist com respostas, observacoes e evidencias",CLOSED,Sprint 7,7,2026-08-11T01:12:30Z,2026-11-04T22:24:42Z,AF,1,P0,EP-09,feature,revisao,0,12,0,16
+frontend,21,Web: fila de inspecoes aguardando revisao,CLOSED,Sprint 7,7,2026-08-11T01:12:28Z,2026-11-18T14:31:03Z,AF,1,P0,EP-09,feature,revisao,0,7,0,16
+frontend,20,Web: listagem e detalhe de nao conformidades,CLOSED,Sprint 5,5,2026-08-11T01:12:27Z,2026-11-18T13:31:11Z,AF,1,P0,EP-07,feature,evidencias,0,8,0,16
+frontend,19,Web: visualizacao de evidencias vinculadas aos itens do checklist,CLOSED,Sprint 5,5,2026-08-11T01:12:25Z,2026-11-18T14:30:56Z,AF,1,P0,EP-07,feature,evidencias,0,8,0,16
+frontend,18,Web: detalhe administrativo da inspecao com cancelamento e historico de estados,CLOSED,Sprint 4,4,2026-08-11T01:12:24Z,2026-11-18T13:06:50Z,AF,1,P0,EP-05,feature,planejamento,0,9,0,16
+frontend,17,"Web: acompanhamento de inspecoes com filtros, progresso e indicacao de atraso",CLOSED,Sprint 4,4,2026-08-11T01:12:22Z,2026-11-04T22:24:40Z,AF,1,P0,EP-05,feature,planejamento,0,10,0,16
+frontend,16,"Web: agendamento de inspecao com selecao encadeada cliente, local e equipamento",CLOSED,Sprint 3,3,2026-08-11T01:12:20Z,2026-11-04T22:24:39Z,AF,1,P0,EP-05,feature,planejamento,0,10,0,16
+frontend,15,"Web: previa do checklist, validacao de pendencias, publicacao e historico de versoes",CLOSED,Sprint 3,3,2026-08-11T01:12:19Z,2026-11-11T21:14:12Z,AF,1,P0,EP-04,feature,templates,0,10,0,16
+frontend,14,"Web: construtor de modelo com secoes, itens, tipos de resposta e reordenacao",CLOSED,Sprint 3,3,2026-08-11T01:12:17Z,2026-11-09T22:46:23Z,AF,1,P0,EP-04,feature,templates,0,11,0,16
+frontend,13,Web: listagem de modelos de inspecao e criacao de rascunho,CLOSED,Sprint 3,3,2026-08-11T01:12:15Z,2026-11-09T21:28:17Z,AF,1,P0,EP-04,feature,templates,0,7,0,16
+frontend,12,Web: gestao de equipamentos com geracao e impressao do QR Code,CLOSED,Sprint 2,2,2026-08-11T01:12:14Z,2026-10-19T23:34:06Z,JV,1,P0,EP-03,feature,cadastros,0,9,0,16
+frontend,11,Web: gestao de locais de inspecao filtrados por cliente,CLOSED,Sprint 2,2,2026-08-11T01:12:12Z,2026-10-19T23:34:04Z,JV,1,P0,EP-03,feature,cadastros,0,8,0,16
+frontend,10,Web: gestao de clientes,CLOSED,Sprint 2,2,2026-08-11T01:12:10Z,2026-10-19T23:34:01Z,JV,1,P0,EP-03,feature,cadastros,0,7,0,16
+frontend,9,"Web: gestao de usuarios com filtros, cadastro e mudanca de situacao",CLOSED,Sprint 2,2,2026-08-11T01:12:09Z,2026-10-19T23:33:58Z,JV,1,P0,EP-02,feature,auth,0,9,0,16
+frontend,8,Web: renovacao de sessao e tratamento centralizado de 401 e 403,CLOSED,Sprint 2,2,2026-08-11T01:12:07Z,2026-10-19T23:33:56Z,JV,1,P0,EP-02,feature,auth,0,7,0,16
+frontend,7,Web: protecao de rotas por proxy.ts e autorizacao por perfil na DAL,CLOSED,Sprint 2,2,2026-08-11T01:12:05Z,2026-10-19T23:33:53Z,AF;JV,2,P0,EP-02,feature,auth,0,8,0,16
+frontend,6,Web: tela de login e sessao em cookie httpOnly,CLOSED,Sprint 2,2,2026-08-11T01:12:04Z,2026-10-19T23:33:50Z,AF;JV,2,P0,EP-02,feature,auth,0,10,0,16
+frontend,5,"Web: pipeline de integracao continua (lint, tipos, testes e build)",CLOSED,Sprint 1,1,2026-08-11T01:12:02Z,2026-09-04T23:00:27Z,AF,1,P0,EP-01,infra,,0,7,0,16
+frontend,4,"Web: componentes compartilhados de tabela paginada, filtros e estados de tela",CLOSED,Sprint 1,1,2026-08-11T01:12:00Z,2026-09-04T23:01:25Z,AF,1,P0,EP-01,setup,ux,0,9,0,16
+frontend,3,"Web: camada de acesso a API com cliente tipado, tratamento de erro e DAL",CLOSED,Sprint 1,1,2026-08-11T01:11:59Z,2026-09-04T23:00:29Z,AF,1,P0,EP-01,setup,seguranca,0,9,3,16
+frontend,2,"Web: shell administrativo com navegacao lateral, cabecalho e breadcrumbs",CLOSED,Sprint 1,1,2026-08-11T01:11:57Z,2026-09-04T23:01:22Z,AF,1,P0,EP-01,setup,ux,0,9,0,16
+frontend,1,Web: bootstrap do projeto Next.js 16 com App Router e estrutura por features,CLOSED,Sprint 1,1,2026-08-11T01:11:55Z,2026-09-04T23:01:22Z,AF,1,P0,EP-01,setup,,0,9,0,16
+app,39,App: tema escuro,OPEN,,,2026-08-11T01:13:47Z,,,0,P1,EP-10,feature,ux,0,7,0,16
+app,38,App: assinatura desenhada no dispositivo,OPEN,,,2026-08-11T01:13:45Z,,,0,P1,EP-10,feature,evidencias,0,8,0,16
+app,37,App: biometria para reabertura da sessao local,OPEN,,,2026-08-11T01:13:44Z,,,0,P1,EP-10,feature,seguranca,0,8,0,16
+app,36,App: notificacoes locais de prazo de inspecao,OPEN,,,2026-08-11T01:13:43Z,,,0,P1,EP-10,feature,,0,7,0,16
+app,35,App: verificacao do escopo minimo do mobile antes da entrega,OPEN,Sprint 8,8,2026-08-11T01:13:41Z,,,0,P0,EP-10,test,,0,6,0,16
+app,34,"App: build Android com EAS, distribuicao interna e README final",OPEN,Sprint 8,8,2026-08-11T01:13:40Z,,,0,P0,EP-10,infra,,0,9,0,16
+app,33,"App: configuracao de ambientes, identidade visual e versionamento",OPEN,Sprint 8,8,2026-08-11T01:13:38Z,,,0,P0,EP-10,infra,,0,9,0,16
+app,32,"App: revisao de estados de interface, acessibilidade e desempenho",OPEN,Sprint 7,7,2026-08-11T01:13:36Z,,,0,P0,EP-10,,ux,0,10,0,16
+app,31,App: testes automatizados dos fluxos prioritarios do mobile,OPEN,Sprint 7,7,2026-08-11T01:13:35Z,,,0,P0,EP-10,test,,0,8,0,16
+app,30,App: recebimento de inspecao reprovada e fluxo de correcao,OPEN,Sprint 7,7,2026-08-11T01:13:33Z,,,0,P0,EP-09,feature,revisao,0,10,0,16
+app,29,App: execucao integralmente offline e retomada apos reiniciar,OPEN,Sprint 6,6,2026-08-11T01:13:31Z,,,0,P0,EP-08,feature,execucao,0,8,0,16
+app,28,App: tratamento de conflito com preservacao do dado local,OPEN,Sprint 6,6,2026-08-11T01:13:30Z,,,0,P0,EP-08,feature,sync,0,9,0,16
+app,27,"App: tela de sincronizacao com pendencias, falhas e ultima execucao",OPEN,Sprint 6,6,2026-08-11T01:13:28Z,,,0,P0,EP-08,feature,sync,0,10,0,16
+app,26,App: deteccao de conectividade e indicadores de estado offline,OPEN,Sprint 6,6,2026-08-11T01:13:26Z,,,0,P0,EP-08,feature,sync,0,9,0,16
+app,25,App: fila de upload de arquivos com estado individual por evidencia,OPEN,Sprint 6,6,2026-08-11T01:13:24Z,,,0,P0,EP-08,feature,evidencias,0,10,0,16
+app,24,"App: motor de sincronizacao com lotes, dependencias e retentativa controlada",OPEN,Sprint 6,6,2026-08-11T01:13:23Z,,,0,P0,EP-08,feature,sync,0,13,0,16
+app,23,App: outbox persistente de operacoes de sincronizacao,CLOSED,Sprint 6,6,2026-08-11T01:13:21Z,2026-11-11T14:22:48Z,,0,P0,EP-08,feature,sync,0,10,0,16
+app,22,App: download de inspecoes com persistencia transacional e cursor,OPEN,Sprint 6,6,2026-08-11T01:13:19Z,,,0,P0,EP-08,feature,sync,0,10,0,16
+app,21,"App: banco local SQLite com esquema, migracoes e repositorios",CLOSED,Sprint 6,6,2026-08-11T01:13:18Z,2026-11-11T14:22:45Z,,0,P0,EP-08,feature,sync,0,10,0,16
+app,20,App: registro de nao conformidade com criticidade e evidencia,OPEN,Sprint 5,5,2026-08-11T01:13:16Z,,,0,P0,EP-07,feature,evidencias,0,11,0,16
+app,19,App: captura pontual de localizacao no inicio e na conclusao,CLOSED,Sprint 5,5,2026-08-11T01:13:14Z,2026-11-04T22:24:44Z,,0,P0,EP-07,feature,evidencias,0,10,0,16
+app,18,App: leitura de QR Code e confirmacao do equipamento,CLOSED,Sprint 5,5,2026-08-11T01:13:13Z,2026-11-11T15:51:39Z,,0,P0,EP-07,feature,evidencias,0,9,0,16
+app,17,App: captura de fotografia com previa e vinculo ao item,CLOSED,Sprint 5,5,2026-08-11T01:13:11Z,2026-11-11T14:51:32Z,,0,P0,EP-07,feature,evidencias,0,11,0,16
+app,16,App: resumo e conclusao da inspecao com validacao completa,CLOSED,Sprint 4,4,2026-08-11T01:13:09Z,2026-10-23T23:36:12Z,,0,P0,EP-06,feature,execucao,0,10,0,16
+app,15,"App: progresso, validacao de obrigatorios e navegacao para pendencias",CLOSED,Sprint 4,4,2026-08-11T01:13:08Z,2026-10-23T23:29:30Z,,0,P0,EP-06,feature,execucao,0,9,0,16
+app,14,App: inicio da inspecao com registro de horario e transicao de estado,CLOSED,Sprint 4,4,2026-08-11T01:13:06Z,2026-10-23T23:36:10Z,,0,P0,EP-06,feature,execucao,0,9,0,16
+app,13,App: componentes de resposta por tipo com validacao,CLOSED,Sprint 4,4,2026-08-11T01:13:05Z,2026-10-23T23:29:28Z,,0,P0,EP-06,feature,execucao,0,10,0,16
+app,12,App: motor de checklist dinamico renderizado a partir do snapshot,CLOSED,Sprint 4,4,2026-08-11T01:13:03Z,2026-10-23T23:29:25Z,,0,P0,EP-06,feature,execucao,0,10,0,16
+app,11,"App: detalhe da inspecao com dados, progresso e acao contextual",CLOSED,Sprint 4,4,2026-08-11T01:13:02Z,2026-10-23T23:16:39Z,,0,P0,EP-06,feature,execucao,0,8,0,16
+app,10,"App: lista de inspecoes com filtros, pesquisa e indicadores de estado",CLOSED,Sprint 4,4,2026-08-11T01:13:00Z,2026-10-23T23:11:04Z,,0,P0,EP-06,feature,execucao,0,10,0,16
+app,9,App: tela inicial com resumo do dia e acoes rapidas,CLOSED,Sprint 4,4,2026-08-11T01:12:58Z,2026-10-23T23:11:01Z,,0,P0,EP-06,feature,execucao,0,8,0,16
+app,8,App: renovacao de token e protecao efetiva de rotas,CLOSED,Sprint 2,2,2026-08-11T01:12:57Z,2026-10-14T14:20:49Z,FM,1,P0,EP-02,feature,auth,0,8,0,16
+app,7,"App: sessao segura com SecureStore, carregamento e logout",CLOSED,Sprint 2,2,2026-08-11T01:12:55Z,2026-10-14T14:20:46Z,FM,1,P0,EP-02,feature,auth,0,9,0,16
+app,6,App: tela de login e autenticacao integrada com a API,CLOSED,Sprint 2,2,2026-08-11T01:12:54Z,2026-09-18T00:50:32Z,FM,1,P0,EP-02,feature,auth,0,10,0,16
+app,5,"App: pipeline de integracao continua (tipos, lint e testes)",CLOSED,Sprint 1,1,2026-08-11T01:12:52Z,2026-08-21T23:31:51Z,FM,1,P0,EP-01,infra,,0,7,0,16
+app,4,App: cliente HTTP com configuracao por ambiente e tratamento de erro,CLOSED,Sprint 1,1,2026-08-11T01:12:50Z,2026-08-21T23:14:59Z,FM,1,P0,EP-01,setup,,0,9,0,16
+app,3,"App: design system com tokens, componentes base e estados visuais",CLOSED,Sprint 1,1,2026-08-11T01:12:49Z,2026-08-17T23:04:31Z,FM,1,P0,EP-01,setup,ux,0,8,0,16
+app,2,"App: navegacao com Expo Router, grupos de rotas publicas e protegidas",CLOSED,Sprint 1,1,2026-08-11T01:12:47Z,2026-08-14T22:16:13Z,FM,1,P0,EP-01,setup,,0,7,0,16
+app,1,App: bootstrap do projeto Expo com TypeScript e estrutura por features,CLOSED,Sprint 1,1,2026-08-11T01:12:45Z,2026-08-11T19:08:19Z,FM,1,P0,EP-01,setup,,0,9,0,16
+docs,6,"Docs: registro de limitacoes conhecidas, debitos tecnicos e riscos",OPEN,Sprint 8,8,2026-08-11T01:10:50Z,,,0,P0,EP-10,docs,,0,5,0,11
+docs,5,Docs: roteiro da demonstracao ponta a ponta (AC-RELEASE),OPEN,Sprint 8,8,2026-08-11T01:10:48Z,,,0,P0,EP-10,docs,,0,6,0,11
+docs,4,Docs: guia de execucao do ecossistema completo a partir do zero,OPEN,Sprint 8,8,2026-08-11T01:10:46Z,,,0,P0,EP-10,docs,,0,6,0,11
+docs,3,Docs: registro de decisoes de arquitetura (ADR) e diagramas versionados,OPEN,Sprint 1,1,2026-08-11T01:10:44Z,,,0,P0,EP-01,docs,,0,7,0,11
+docs,2,"Docs: contrato compartilhado de enums, identificadores e formato de erro",OPEN,Sprint 1,1,2026-08-11T01:10:43Z,,,0,P0,EP-01,docs,,0,6,0,11
+docs,1,"Docs: convencoes de repositorio, fluxo Git e templates de PR/issue",CLOSED,Sprint 1,1,2026-08-11T01:10:41Z,2026-08-11T19:20:00Z,JV,1,P0,EP-01,docs,,0,5,0,11

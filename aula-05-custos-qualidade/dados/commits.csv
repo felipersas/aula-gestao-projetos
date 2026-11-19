@@ -1,0 +1,672 @@
+repo,sha,date,autor,tipo,merge,msg
+backend,cc5121a,2026-11-12T19:10:02Z,JV,merge,1,Merge pull request #65 from FieldOps-Project/feat/EP-05-inspection-state-machine
+backend,cd1f356,2026-11-12T00:32:38Z,GR,feat,0,feat(inspection): add state machine and cancellation flow
+backend,c5c4d44,2026-10-29T19:27:56Z,JV,merge,1,Merge pull request #63 from FieldOps-Project/feat/EP-07-inspection-location
+backend,ee57bcd,2026-10-26T22:44:44Z,FM,feat,0,feat(inspection): store the position read at the start and the completion
+backend,89e22d4,2026-10-24T00:58:44Z,JV,merge,1,Merge pull request #62 from FieldOps-Project/feat/EP-05-inspection-data-model
+backend,46bcbc3,2026-10-24T00:47:04Z,JV,docs,0,docs(readme): document integration tests and the inspection model
+backend,3671198,2026-10-24T00:47:04Z,JV,test,0,test(inspection): verify the inspection schema on a real PostgreSQL
+backend,7e50a1f,2026-10-24T00:47:04Z,JV,test,0,test(inspection): cover inspection creation and checklist snapshot
+backend,86ec33d,2026-10-24T00:47:03Z,JV,feat,0,feat(inspection): add the item snapshot repository
+backend,4cf2fb7,2026-10-24T00:47:03Z,JV,feat,0,feat(inspection): add the inspection repository
+backend,0653935,2026-10-24T00:47:03Z,JV,feat,0,feat(inspection): map the inspection with device and server timestamps
+backend,72e56cf,2026-10-24T00:47:02Z,JV,feat,0,feat(inspection): map the immutable item snapshot
+backend,f1c6620,2026-10-24T00:47:02Z,JV,feat,0,feat(inspection): create the inspection and item snapshot tables
+backend,01b22fd,2026-10-24T00:47:02Z,JV,feat,0,feat(inspection): add the inspection priorities
+backend,50574ea,2026-10-24T00:47:02Z,JV,feat,0,feat(inspection): add the inspection business states
+backend,3fd2151,2026-10-24T00:47:01Z,JV,build,0,build(test): add Testcontainers for PostgreSQL integration tests
+backend,e5acf26,2026-10-24T00:13:00Z,PD,merge,1,Merge pull request #61 from FieldOps-Project/feat/EP-04-template-version-publishing
+backend,78b5b69,2026-10-23T23:11:06Z,JV,merge,1,Merge pull request #60 from FieldOps-Project/feat/EP-01-api-ci
+backend,fdd92c9,2026-10-23T23:10:49Z,JV,docs,0,docs(postman): add the version publishing requests
+backend,768dd0f,2026-10-23T23:10:49Z,JV,docs,0,docs(api): add the version publishing endpoints to the OpenAPI contract
+backend,b5eb50a,2026-10-23T23:10:49Z,JV,docs,0,docs(adr): record the copy-on-publish strategy for template versions
+backend,5dbd0d9,2026-10-23T23:10:48Z,JV,test,0,test(template): cover publishing authorization and error responses
+backend,2ecd35f,2026-10-23T23:10:48Z,JV,feat,0,feat(template): expose the version publishing endpoints
+backend,6f6ee65,2026-10-23T23:10:47Z,JV,feat,0,feat(template): map published versions to responses
+backend,a33419a,2026-10-23T23:10:47Z,JV,feat,0,feat(template): add the template status request
+backend,b79b18b,2026-10-23T23:10:47Z,JV,feat,0,feat(template): add the version availability request
+backend,5b0b696,2026-10-23T23:10:46Z,JV,feat,0,feat(template): add the template version detail response
+backend,1dfc8b5,2026-10-23T23:10:46Z,JV,feat,0,feat(template): add the template version summary response
+backend,1a9a17d,2026-10-23T23:10:46Z,JV,test,0,test(template): cover version publishing and lifecycle rules
+backend,e41fe5c,2026-10-23T23:10:45Z,JV,feat,0,feat(template): publish versions and manage their lifecycle
+backend,7b7744e,2026-10-23T23:10:45Z,JV,test,0,test(template): cover the publication validation rules
+backend,bad651a,2026-10-23T23:10:45Z,JV,feat,0,feat(template): validate the draft before publication
+backend,b10f23d,2026-10-23T23:10:45Z,JV,feat,0,feat(template): query published versions and the latest version number
+backend,0e346fc,2026-10-23T23:10:44Z,JV,feat,0,feat(template): lock the template row while publishing
+backend,d8cfa43,2026-10-23T23:10:44Z,JV,test,0,test(template): cover draft copy on publish and version availability
+backend,c316941,2026-10-23T23:10:44Z,JV,feat,0,feat(template): publish a frozen copy of the draft and toggle availability
+backend,6f419c9,2026-10-23T23:10:43Z,JV,test,0,test(api): cover business rule violations in the error response
+backend,d44a40d,2026-10-23T23:10:43Z,JV,feat,0,feat(api): return business rule violations as field errors
+backend,bf40336,2026-10-23T23:10:43Z,JV,feat,0,feat(api): carry violations in business rule exceptions
+backend,4c8c8f7,2026-10-23T23:10:42Z,JV,feat,0,feat(api): add the business rule violation record
+backend,5aadb3e,2026-10-23T23:10:42Z,JV,test,0,test(audit): cover audit events for other entity types
+backend,e45b9f0,2026-10-23T23:10:41Z,JV,feat,0,feat(audit): record audit events for any entity type
+backend,793bf00,2026-10-23T23:01:14Z,PD,ci,0,ci: add build test and static analysis pipeline
+backend,71007a5,2026-10-23T22:32:48Z,JV,merge,1,Merge pull request #59 from FieldOps-Project/feat/EP-04-template-draft-editing
+backend,6816c5c,2026-10-23T22:27:15Z,JV,docs,0,docs(postman): add the template builder requests
+backend,6825e44,2026-10-23T22:27:15Z,JV,docs,0,docs(api): add the template builder endpoints to the OpenAPI contract
+backend,4c20051,2026-10-23T22:27:14Z,JV,test,0,test(api): cover the data integrity conflict response
+backend,4bb102a,2026-10-23T22:27:13Z,JV,fix,0,fix(api): return 409 instead of 500 on data integrity violations
+backend,adc0abe,2026-10-23T22:27:13Z,JV,test,0,test(user): mock template repositories in the security context
+backend,2dfdd62,2026-10-23T22:27:13Z,JV,test,0,test(equipment): mock template repositories in the security context
+backend,bb81b87,2026-10-23T22:27:12Z,JV,test,0,test(site): mock template repositories in the security context
+backend,033ca17,2026-10-23T22:27:12Z,JV,test,0,test(client): mock template repositories in the security context
+backend,189cc84,2026-10-23T22:27:12Z,JV,test,0,test(api): mock template repositories in the application context test
+backend,55aa3ce,2026-10-23T22:27:11Z,JV,test,0,test(template): cover template builder authorization and error responses
+backend,d439910,2026-10-23T22:27:11Z,JV,feat,0,feat(template): expose the template builder endpoints
+backend,c61a698,2026-10-23T22:27:10Z,JV,feat,0,"feat(template): map templates, sections and items to responses"
+backend,08f8d03,2026-10-23T22:27:10Z,JV,feat,0,feat(template): add the template detail response with the draft structure
+backend,7bf2221,2026-10-23T22:27:09Z,JV,feat,0,feat(template): add the template listing response
+backend,65facd6,2026-10-23T22:27:08Z,JV,feat,0,feat(template): add the section response with ordered items
+backend,7cdf7a0,2026-10-23T22:27:08Z,JV,feat,0,feat(template): add the item response
+backend,742d489,2026-10-23T22:27:07Z,JV,feat,0,feat(template): add the batch item reorder request
+backend,d41cef7,2026-10-23T22:27:06Z,JV,feat,0,feat(template): add the batch section reorder request
+backend,a13de5d,2026-10-23T22:27:06Z,JV,feat,0,feat(template): add the update item request
+backend,4d80748,2026-10-23T22:27:05Z,JV,feat,0,feat(template): add the create item request
+backend,8b0fb4d,2026-10-23T22:27:05Z,JV,feat,0,feat(template): add the update section request
+backend,7940053,2026-10-23T22:27:05Z,JV,feat,0,feat(template): add the create section request
+backend,9e964bc,2026-10-23T22:27:04Z,JV,feat,0,feat(template): add the update template request
+backend,509e9f4,2026-10-23T22:27:04Z,JV,feat,0,feat(template): add the create template request
+backend,c06c164,2026-10-23T22:27:04Z,JV,test,0,"test(template): cover draft editing, reordering and published version guard"
+backend,e7d213d,2026-10-23T22:27:03Z,JV,feat,0,feat(template): add draft editing use cases with ordered sections and items
+backend,218844f,2026-10-23T22:27:03Z,JV,feat,0,"feat(template): filter templates by search, status and category"
+backend,ae94340,2026-10-23T22:27:03Z,JV,test,0,test(template): cover item coherence rules per response type
+backend,c9c0023,2026-10-23T22:27:02Z,JV,feat,0,feat(template): validate options and failure rules against the response type
+backend,a903785,2026-10-23T22:27:02Z,JV,test,0,test(template): cover single choice options conversion
+backend,4b56ad7,2026-10-23T22:27:02Z,JV,feat,0,feat(template): store single choice options as a JSON array
+backend,b2a51b4,2026-10-23T22:27:01Z,JV,feat,0,feat(template): add the item command shared by create and update
+backend,e555eb0,2026-10-23T22:27:01Z,JV,feat,0,feat(auth): add the template management policy
+backend,ebfbbcb,2026-10-23T22:27:01Z,JV,test,0,test(template): cover item removal from a section
+backend,40d49be,2026-10-23T22:27:00Z,JV,test,0,test(template): cover draft-only editing of template versions
+backend,ab61d49,2026-10-23T22:27:00Z,JV,feat,0,feat(template): allow removing items from a section
+backend,6fcf4da,2026-10-23T22:27:00Z,JV,feat,0,feat(template): reject structural changes on published versions
+backend,aa99600,2026-10-23T22:26:59Z,JV,test,0,test(template): cover the deferred display order constraints
+backend,b5adb47,2026-10-23T22:26:59Z,JV,feat,0,feat(template): check display order uniqueness at commit for batch reordering
+backend,8657b94,2026-10-23T22:26:58Z,JV,test,0,test(template): ignore column alignment when checking the version unique index
+backend,f3d0077,2026-10-19T23:29:23Z,JV,docs,0,docs(postman): cover all endpoints with auth and chained variables
+backend,4d7222b,2026-10-19T23:29:22Z,JV,docs,0,docs(api): sync OpenAPI contract with implemented endpoints
+backend,47563fe,2026-10-19T23:29:22Z,JV,fix,0,fix(api): upgrade springdoc to 3.1.1 for Spring Boot 4 compatibility
+backend,9c31782,2026-09-29T00:16:13Z,JV,merge,1,Merge pull request #58 from FieldOps-Project/feat/EP-04-inspection-template-model
+backend,bd3ecf8,2026-09-29T00:13:46Z,JV,test,0,test(template): add unit tests for inspection template domain model
+backend,7611063,2026-09-29T00:09:04Z,JV,docs,0,docs(adr): record draft representation strategy for inspection templates
+backend,8055b8e,2026-09-29T00:08:12Z,JV,feat,0,feat(template): add TemplateItem domain entity and repository
+backend,c68b827,2026-09-29T00:07:03Z,JV,feat,0,feat(template): add TemplateSection domain entity and repository
+backend,c5bd954,2026-09-29T00:06:01Z,JV,feat,0,feat(template): add InspectionTemplateVersion domain entity and repository
+backend,7d0e72f,2026-09-29T00:05:08Z,JV,feat,0,feat(template): add InspectionTemplate domain entity and repository
+backend,2dfd480,2026-09-29T00:04:19Z,JV,feat,0,feat(template): add domain enums TemplateStatus and ResponseType
+backend,6c086d2,2026-09-29T00:03:30Z,JV,feat,0,feat(db): add V9 Flyway migration for inspection template tables
+backend,fa296de,2026-09-28T23:50:26Z,JV,merge,1,Merge pull request #57 from FieldOps-Project/fix/EP-02-duplicate-migration-version
+backend,bfbc57b,2026-09-28T20:58:16Z,AF,fix,0,fix(db): renumber the audit events migration to resolve the duplicate V5
+backend,a33297b,2026-09-26T01:11:13Z,JV,test,0,test(equipment): add unit and integration test suite for equipment management
+backend,f5da758,2026-09-26T01:11:03Z,JV,feat,0,feat(equipment): implement EquipmentController REST endpoints
+backend,e874981,2026-09-26T01:10:54Z,JV,feat,0,feat(equipment): implement EquipmentService and DTO contracts
+backend,7e0c05b,2026-09-26T01:10:42Z,JV,feat,0,"feat(equipment): implement Equipment domain model, repository and specifications"
+backend,21b6955,2026-09-26T01:10:33Z,JV,feat,0,feat(equipment): add V7 Flyway migration for equipment table
+backend,e50c355,2026-09-26T00:54:36Z,JV,fix,0,fix(openapi): refine security rules and OpenAPI contract tests
+backend,3814ca6,2026-09-26T00:38:09Z,JV,merge,1,merge: integrate commits from main into develop
+backend,f476d28,2026-09-26T00:30:54Z,JV,fix,0,fix(test): add AuditEventRepository mock to InspectionSiteAuthorizationTest
+backend,c529269,2026-09-26T00:29:23Z,JV,merge,1,Merge remote-tracking branch 'origin/codex/issue-10-inspection-sites' into develop
+backend,9bc732a,2026-09-26T00:29:20Z,JV,fix,0,fix(test): add AuditEventRepository mock to ClientAuthorizationTest
+backend,33cd2c0,2026-09-26T00:28:39Z,JV,merge,1,merge: resolve conflicts and merge PR #55 (codex/issue-9-client-management)
+backend,538680b,2026-09-26T00:24:33Z,JV,merge,1,Merge remote-tracking branch 'origin/issue-7-role-based-authorization' into develop
+backend,f646de3,2026-09-26T00:20:10Z,JV,merge,1,Merge pull request #54 from FieldOps-Project/issue-8-user-management
+backend,dc3941a,2026-09-26T00:19:41Z,JV,merge,1,Merge pull request #50 from FieldOps-Project/issue-6-jwt-authentication
+backend,5160e61,2026-09-18T00:49:17Z,GR,feat,0,feat(site): add inspection site management API
+backend,983702b,2026-09-18T00:35:56Z,GR,feat,0,feat(client): add client management API
+backend,ea66e81,2026-09-17T23:23:54Z,GR,feat,0,feat(users): complete user management and access reset
+backend,dfcc41b,2026-09-17T23:01:32Z,GR,feat,0,feat(authz): enforce role-based access policies
+backend,b7a3db4,2026-09-15T00:06:34Z,PD,merge,1,Merge pull request #51 from FieldOps-Project/copilot/pbi-006-openapi-contract-implementation
+backend,fb7949a,2026-09-15T00:05:52Z,PD,merge,1,Merge pull request #52 from FieldOps-Project/feat/issue-3-openapi
+backend,367a0aa,2026-09-15T00:04:03Z,PD,feat,0,feat(api): add versioned OpenAPI contract
+backend,2ff9c54,2026-09-14T23:55:34Z,BOT,outro,0,Apply remaining changes
+backend,8cd2e3e,2026-09-14T23:52:48Z,BOT,chore,1,chore: merge develop baseline for implementation
+backend,e8d1fca,2026-09-14T23:50:44Z,BOT,outro,0,Initial plan
+backend,1e07cb6,2026-09-14T22:48:22Z,BOT,merge,1,Merge remote-tracking branch 'origin/develop' into issue-6-jwt-authentication
+backend,08e0c3e,2026-09-05T00:50:50Z,GR,feat,0,feat(auth): add JWT authentication and session management
+backend,43c4186,2026-08-27T22:30:53Z,GR,feat,0,"feat: add user entity, password hash and persistence setup"
+backend,ba8ae02,2026-09-04T22:56:57Z,PD,merge,1,Merge pull request #48 from FieldOps-Project/issue-5-user-entity-password-hash
+backend,6a2adfb,2026-08-27T22:30:53Z,GR,feat,0,"feat: add user entity, password hash and persistence setup"
+backend,2895d82,2026-08-12T00:43:23Z,JV,merge,1,Merge pull request #44 from FieldOps-Project/feat/EP-01-shared-error-layer
+backend,509b1ee,2026-08-12T00:40:14Z,JV,refactor,0,refactor(cors): segregate allowed origins by local and production profiles
+backend,796ba89,2026-08-11T23:39:29Z,JV,merge,1,Merge pull request #43 from FieldOps-Project/feat/EP-01-shared-error-layer
+backend,31e987b,2026-08-11T20:08:47Z,JV,chore,0,chore: remove obsolete .gitkeep from shared package
+backend,74977df,2026-08-11T20:08:41Z,JV,docs,0,docs: add Postman collection for API testing
+backend,39d46eb,2026-08-11T20:08:25Z,JV,test,0,test(shared): add integration tests for GlobalExceptionHandler
+backend,f8b09e6,2026-08-11T20:08:20Z,JV,build,0,build: use maven.test.skip in Dockerfile to skip test compilation
+backend,4bbb885,2026-08-11T20:08:16Z,JV,build,0,build: add spring-boot-starter-test dependency
+backend,7ff4d34,2026-08-11T20:08:07Z,JV,config,0,config: add CORS origins and requestId log pattern to application.yml
+backend,c921590,2026-08-11T20:08:01Z,JV,feat,0,feat(shared): add CORS configuration driven by application properties
+backend,4d959b6,2026-08-11T20:07:55Z,JV,feat,0,feat(shared): add GlobalExceptionHandler for standardized error responses
+backend,f1cae65,2026-08-11T20:07:49Z,JV,feat,0,feat(shared): add RequestIdFilter for X-Request-Id correlation
+backend,2f528af,2026-08-11T20:07:44Z,JV,feat,0,feat(shared): add PaginationDefaults constants and safe builder
+backend,050613b,2026-08-11T20:07:38Z,JV,feat,0,feat(shared): add generic PageResponse pagination envelope
+backend,63c2dca,2026-08-11T20:07:32Z,JV,feat,0,feat(shared): add canonical ApiError response DTO
+backend,95b3382,2026-08-11T20:07:15Z,JV,feat,0,feat(shared): add BusinessRuleException mapped to 422
+backend,4900f81,2026-08-11T20:07:09Z,JV,feat,0,feat(shared): add ConflictException mapped to 409
+backend,f4ca92d,2026-08-11T20:06:45Z,JV,feat,0,feat(shared): add ResourceNotFoundException mapped to 404
+backend,5cf36cc,2026-08-11T20:06:37Z,JV,feat,0,feat(shared): add BusinessException base class with machine-readable code
+backend,a79357a,2026-08-11T19:06:46Z,JV,merge,1,Merge pull request #42 from FieldOps-Project/feat/EP-01-bootstrap-api
+backend,d8c7e16,2026-08-11T18:37:20Z,JV,feat,0,feat(api): bootstrap spring boot project with docker and postgres
+backend,a09cdba,2026-08-11T17:47:31Z,JV,merge,1,Merge pull request #41 from FieldOps-Project/develop
+backend,71d2384,2026-08-11T17:47:06Z,JV,merge,1,Merge pull request #40 from FieldOps-Project/docs/EP-01-repo-conventions
+backend,cb47717,2026-08-11T17:46:06Z,JV,docs,0,docs(repo): add issue/pr templates and update readme
+backend,490df7d,2026-08-10T22:49:51Z,JV,outro,0,Initial commit
+backend,9ae850c,2026-11-04T23:41:30Z,GR,feat,0,feat(inspection): add scheduling and checklist snapshot
+frontend,49f4f18,2026-09-04T23:00:06Z,FM,merge,1,Merge pull request #35 from FieldOps-Project/feat/EP-01-admin-shell
+frontend,098b6d4,2026-09-01T13:25:43Z,AF,refactor,0,refactor(auth): show the brand mark on the access screen
+frontend,2b54163,2026-09-01T13:25:43Z,AF,refactor,0,refactor(shell): show the brand mark in the drawer
+frontend,ff6e94f,2026-09-01T13:25:42Z,AF,refactor,0,refactor(shell): show the brand mark in the sidebar
+frontend,fce516b,2026-09-01T13:25:20Z,AF,feat,0,feat(ui): add the FieldOps brand mark as inline artwork
+frontend,5f98fcb,2026-09-01T13:20:53Z,AF,refactor,0,refactor(auth): polish the access screen layout
+frontend,c889c00,2026-09-01T13:20:37Z,AF,refactor,0,refactor(ui): give the pending-screen placeholder a finished look
+frontend,1ce9c63,2026-09-01T13:20:21Z,AF,refactor,0,refactor(shell): keep the chrome fixed and scroll only the content
+frontend,55bb7d9,2026-09-01T13:20:21Z,AF,refactor,0,refactor(shell): tighten breadcrumb spacing on narrow screens
+frontend,a3d0a0a,2026-09-01T13:20:01Z,AF,refactor,0,refactor(shell): adapt the header to narrow screens
+frontend,10f8aae,2026-09-01T13:19:42Z,AF,refactor,0,refactor(shell): draw the drawer controls with the field app icon set
+frontend,e4203c9,2026-09-01T13:19:42Z,AF,refactor,0,refactor(shell): draw the sidebar controls with the field app icon set
+frontend,abd8ca4,2026-09-01T13:19:29Z,AF,refactor,0,refactor(shell): draw the navigation with the field app icon set
+frontend,1191a82,2026-09-01T13:19:28Z,AF,build,0,build(web): use the icon family of the field app instead of lucide
+frontend,c4b086c,2026-09-01T13:18:10Z,AF,feat,0,feat(shell): add the drawer navigation for narrow screens
+frontend,bc3707f,2026-09-01T13:17:51Z,AF,refactor,0,refactor(shell): turn the sidebar into a fixed rail for wide screens
+frontend,a351b3e,2026-09-01T13:17:32Z,AF,feat,0,feat(shell): extract the icon navigation list shared by both menus
+frontend,35f98af,2026-09-01T13:17:16Z,AF,build,0,build(web): add lucide-react for the interface icons
+frontend,39c528e,2026-09-01T13:03:04Z,AF,feat,0,feat(auth): offer the development entry points on the login route
+frontend,6f0cc04,2026-09-01T13:02:51Z,AF,feat,0,feat(auth): add a temporary development sign-in until the login screen exists
+frontend,f9fb4b6,2026-09-01T13:02:38Z,AF,feat,0,feat(session): resolve the signed-in profile from the session cookie
+frontend,f7cb4e0,2026-09-01T12:59:48Z,AF,test,0,test(shell): cover navigation filtering and active route
+frontend,9020ff5,2026-09-01T12:59:33Z,AF,feat,0,feat(shell): assemble the authenticated layout
+frontend,efaa4da,2026-09-01T12:59:19Z,AF,feat,0,feat(ui): add the global toast region for action feedback
+frontend,4f2b6f1,2026-09-01T12:59:05Z,AF,feat,0,feat(ui): add the single confirmation dialog for critical actions
+frontend,c46bbf3,2026-09-01T12:58:42Z,AF,feat,0,feat(shell): add breadcrumbs derived from the route segments
+frontend,9beee12,2026-09-01T12:58:24Z,AF,feat,0,feat(shell): add the header with user identity and sign-out
+frontend,1c744a4,2026-09-01T12:58:10Z,AF,feat,0,feat(auth): add the sign-out action that clears the session cookies
+frontend,acb0a50,2026-09-01T12:57:55Z,AF,feat,0,feat(shell): add the environment badge for non-production
+frontend,80d5f21,2026-09-01T12:57:44Z,AF,feat,0,feat(shell): add the collapsible sidebar with the active route
+frontend,5f8b2b1,2026-09-01T12:57:13Z,AF,feat,0,feat(session): add the single access point for the signed-in user
+frontend,46bf0a7,2026-09-01T12:57:12Z,AF,build,0,build(web): add server-only to fence server modules off from the client
+frontend,310bcac,2026-09-01T12:56:34Z,AF,feat,0,feat(shell): add the navigation map from document 14.3
+frontend,49184e4,2026-09-01T12:56:12Z,AF,feat,0,feat(domain): add user role and status with their display labels
+frontend,25984dd,2026-09-01T12:55:59Z,AF,fix,0,fix(web): declare the panel language and title in the document
+frontend,8175fd0,2026-09-01T12:35:38Z,AF,feat,0,feat(design): add the product palette and layout tokens
+frontend,2b7241f,2026-08-31T07:38:25Z,AF,docs,0,docs(web): raise the documented Node prerequisite to 22
+frontend,4c83f77,2026-08-31T07:38:24Z,AF,ci,0,ci(web): run the pipeline on Node 22
+frontend,d24e0df,2026-08-31T07:34:05Z,AF,fix,0,fix(web): generate route types before type checking
+frontend,2c5d814,2026-08-28T08:02:00Z,AF,ci,0,"ci(web): add pipeline for lint, types, tests and production build"
+frontend,d0cc9e9,2026-08-28T08:02:00Z,AF,docs,0,"docs(web): add README with prerequisites, environment and scripts"
+frontend,5757683,2026-08-28T08:02:00Z,AF,test,0,test(web): set up Vitest and cover route protection without session
+frontend,1dbfb5f,2026-08-28T08:01:59Z,AF,feat,0,feat(web): add proxy guarding the authenticated route group
+frontend,b5e50d0,2026-08-28T08:01:59Z,AF,feat,0,feat(web): add feature-based folder structure for the panel
+frontend,6bc6dbe,2026-08-28T08:01:59Z,AF,config,0,config(web): add environment example split by exposure boundary
+frontend,8ca9b9b,2026-08-28T08:01:59Z,AF,chore,0,chore(web): normalize line endings across the repository
+frontend,b9eba83,2026-08-28T08:01:58Z,AF,feat,0,feat(web): add skeleton routes for the navigation map
+frontend,4246c0c,2026-08-28T08:01:58Z,AF,chore,0,chore(web): stop generating agent instruction files
+frontend,df0f4a5,2026-08-28T08:01:58Z,AF,build,0,build(web): enable noUncheckedIndexedAccess in TypeScript config
+frontend,1ed7bff,2026-08-28T08:01:58Z,AF,chore,0,chore(web): scaffold Next.js 16 project with App Router and Tailwind
+frontend,c7abc22,2026-08-11T17:49:36Z,JV,merge,1,Merge pull request #32 from FieldOps-Project/docs/EP-01-repo-conventions
+frontend,79c50c3,2026-08-11T17:48:54Z,JV,docs,0,docs(repo): add issue/pr templates and update readme
+frontend,133fe78,2026-08-10T22:51:09Z,JV,outro,0,Initial commit
+frontend,2329e55,2026-11-18T14:30:04Z,AF,merge,1,Merge pull request #51 from FieldOps-Project/feat/EP-09-review-queue
+frontend,022710a,2026-11-18T14:24:59Z,AF,fix,0,fix(review-queue): drop the horizontal scroll and use cards below 1280px
+frontend,59d300b,2026-11-18T14:24:08Z,AF,fix,0,fix(review-queue): fit the queue table so the review button is always visible
+frontend,0424052,2026-11-18T14:20:04Z,AF,fix,0,fix(review-queue): keep the list up when the count fails and align the review filter
+frontend,ac1aa6d,2026-11-18T14:18:10Z,AF,docs,0,docs(readme): document the review queue
+frontend,abd127c,2026-11-18T14:18:10Z,AF,feat,0,"feat(review-queue): link the queue from the dashboard, the list and back from the review"
+frontend,e2d2ef3,2026-11-18T14:16:26Z,AF,feat,0,feat(review-queue): list inspections awaiting review by waiting time
+frontend,5dd28ef,2026-11-18T14:14:34Z,AF,feat,0,feat(review-queue): add the review queue contract and waiting time
+frontend,c63a719,2026-11-18T14:05:29Z,AF,merge,1,Merge pull request #50 from FieldOps-Project/feat/EP-07-evidence-viewer
+frontend,56aeb23,2026-11-18T13:47:15Z,AF,fix,0,"fix(evidence): block non-raster files, revalidate the cache and keep photo names"
+frontend,8d6d7e2,2026-11-18T13:41:55Z,AF,docs,0,docs(readme): document the evidence viewer
+frontend,dda5f23,2026-11-18T13:41:37Z,AF,feat,0,feat(evidence): show the real photos in the review and non-conformity screens
+frontend,2d09e7f,2026-11-18T13:41:36Z,AF,feat,0,feat(evidence): group the inspection photos by checklist item
+frontend,51e220e,2026-11-18T13:38:48Z,AF,feat,0,feat(evidence): show thumbnails and enlarge with capture details
+frontend,0caa659,2026-11-18T13:37:40Z,AF,feat,0,feat(evidence): serve evidence images only with a valid session
+frontend,03d548c,2026-11-18T13:37:39Z,AF,feat,0,feat(evidence): add the evidence contract and demo photos
+frontend,62cf335,2026-11-18T13:29:51Z,AF,merge,1,Merge pull request #49 from FieldOps-Project/feat/EP-07-non-conformities
+frontend,df9654f,2026-11-18T13:24:21Z,AF,fix,0,fix(non-conformities): keep the inspection code on one line and demo starts in the past
+frontend,52c8214,2026-11-18T13:18:50Z,AF,fix,0,fix(non-conformities): show the list as unavailable without the API and keep the severity order
+frontend,df50221,2026-11-18T13:14:32Z,AF,docs,0,docs(readme): document the non-conformities
+frontend,68ba544,2026-11-18T13:14:09Z,AF,feat,0,feat(dashboard): open the non-conformity detail from the recent list
+frontend,b712c47,2026-11-18T13:14:08Z,AF,feat,0,feat(inspections): show the non-conformities in the inspection detail
+frontend,9bee43f,2026-11-18T13:13:06Z,AF,feat,0,feat(non-conformities): show the non-conformity detail with its origin
+frontend,083a3cb,2026-11-18T13:11:22Z,AF,feat,0,feat(non-conformities): list non-conformities by severity with filters
+frontend,af5b57c,2026-11-18T13:08:28Z,AF,feat,0,feat(non-conformities): serve demo non-conformities linked to the inspections
+frontend,e303aae,2026-11-18T12:59:48Z,AF,feat,0,feat(non-conformities): add the non-conformity contract
+frontend,d0f7b03,2026-11-18T12:58:18Z,AF,merge,1,Merge pull request #48 from FieldOps-Project/feat/EP-05-inspection-detail
+frontend,b17b1a6,2026-11-18T12:40:39Z,AF,fix,0,fix(inspections): keep the scheduled time and scope the detail skeleton
+frontend,729898a,2026-11-18T12:35:29Z,AF,docs,0,docs(readme): document the inspection detail
+frontend,8e5ce7b,2026-11-18T12:35:07Z,AF,test,0,test(inspections): cover the cancellation dialog
+frontend,d40f422,2026-11-18T12:34:21Z,AF,feat,0,feat(inspections): open the inspection detail from the list
+frontend,beaff6e,2026-11-18T12:33:52Z,AF,feat,0,feat(inspections): edit the inspection planning before execution starts
+frontend,47f7bbd,2026-11-18T12:31:06Z,AF,feat,0,feat(inspections): add the inspection detail page
+frontend,b911ad6,2026-11-18T12:28:08Z,AF,feat,0,feat(inspections): cancel an inspection with a mandatory reason
+frontend,50da0da,2026-11-18T12:27:04Z,AF,feat,0,feat(inspections): serve demo inspection details and history from memory
+frontend,ca1681b,2026-11-18T12:23:56Z,AF,feat,0,feat(inspections): add the inspection detail contract and allowed actions
+frontend,dd77326,2026-11-11T21:11:20Z,AF,merge,1,Merge pull request #47 from FieldOps-Project/feat/EP-04-template-publishing
+frontend,f11ef5a,2026-11-11T21:01:35Z,AF,fix,0,fix(templates): keep the template name whole in the builder trail
+frontend,33d5fd1,2026-11-11T21:01:35Z,AF,fix,0,fix(ui): center the confirmation dialog
+frontend,97d8ccb,2026-11-11T20:55:07Z,AF,docs,0,"docs(readme): document the template preview, issues and publication"
+frontend,5bd42c4,2026-11-11T20:55:07Z,AF,test,0,"test(templates): cover previewing, validating and publishing from the builder"
+frontend,5dba283,2026-11-11T20:54:40Z,AF,test,0,test(templates): cover the read-only checklist preview
+frontend,81ff1dc,2026-11-11T20:53:26Z,AF,feat,0,feat(templates): add loading skeletons to the preview and version pages
+frontend,732a49a,2026-11-11T20:53:03Z,AF,feat,0,feat(templates): open published versions from the builder history
+frontend,b7583cc,2026-11-11T20:53:03Z,AF,feat,0,feat(templates): list the published versions with publisher and date
+frontend,e89dfcb,2026-11-11T20:52:23Z,AF,feat,0,feat(templates): show the frozen content of a published version
+frontend,f46c5bb,2026-11-11T20:51:43Z,AF,fix,0,fix(templates): focus the issues dialog only when it opens
+frontend,a8936d3,2026-11-11T20:51:09Z,AF,feat,0,feat(templates): publish the version from the builder with confirmation
+frontend,157f821,2026-11-11T20:50:39Z,AF,feat,0,feat(templates): preview and validate the draft from the builder top bar
+frontend,b2e2626,2026-11-11T20:49:15Z,AF,feat,0,feat(templates): add the read-only preview page of the draft
+frontend,67ef5ec,2026-11-11T20:48:36Z,AF,feat,0,"feat(templates): render the checklist as the technician sees it, read only"
+frontend,c0b4fa1,2026-11-11T20:47:59Z,AF,test,0,test(templates): cover publishing on the demo and API paths
+frontend,1ca11a4,2026-11-11T20:47:58Z,AF,feat,0,feat(templates): publish the draft as an immutable version
+frontend,b6a3f1a,2026-11-11T20:43:34Z,AF,feat,0,feat(api): translate the template publication refusal
+frontend,1e628d4,2026-11-11T20:43:34Z,AF,feat,0,feat(templates): load a published version and the names of its publishers
+frontend,9d2a514,2026-11-11T20:43:01Z,AF,test,0,test(templates): cover publishing in the demo store
+frontend,1496d84,2026-11-11T20:43:01Z,AF,feat,0,feat(templates): publish versions in the demo store
+frontend,a88dcbb,2026-11-11T20:41:28Z,AF,test,0,test(templates): cover the local publication check and the API issue paths
+frontend,9bed8a8,2026-11-11T20:41:28Z,AF,feat,0,feat(templates): check the draft for publication issues before publishing
+frontend,2b812ed,2026-11-11T20:41:04Z,AF,feat,0,feat(templates): add the contract of published versions and publication issues
+frontend,1ad54f4,2026-11-09T22:44:19Z,AF,merge,1,Merge pull request #46 from FieldOps-Project/feat/EP-04-template-builder
+frontend,cb5ed99,2026-11-09T22:37:57Z,AF,docs,0,docs(readme): document the template builder
+frontend,416e67f,2026-11-09T22:37:56Z,AF,test,0,test(templates): cover the section card numbering and item actions
+frontend,85684ea,2026-11-09T22:36:52Z,AF,test,0,"test(templates): cover the item editor settings, validation and saving"
+frontend,ebe149d,2026-11-09T22:36:51Z,AF,test,0,test(templates): cover the drag reorder helper
+frontend,d903754,2026-11-09T22:35:21Z,AF,feat,0,feat(templates): add a loading skeleton with the two columns of the builder
+frontend,f127942,2026-11-09T22:34:29Z,AF,fix,0,fix(shell): contain absolute elements in the scrolling content area
+frontend,66dec77,2026-11-09T22:33:37Z,AF,feat,0,feat(templates): drag sections and items by their handles
+frontend,100ef68,2026-11-09T22:30:36Z,AF,feat,0,feat(templates): delete and move items within a section
+frontend,ced4290,2026-11-09T21:57:16Z,AF,feat,0,feat(templates): add items from the dashed button of each section
+frontend,f637228,2026-11-09T21:53:24Z,AF,feat,0,feat(templates): warn before a type change drops the item settings
+frontend,4321600,2026-11-09T21:52:52Z,AF,feat,0,feat(templates): show only the settings that apply to the response type
+frontend,2898348,2026-11-09T21:52:01Z,AF,feat,0,feat(templates): edit an item inline as in the panel design
+frontend,9f56bcf,2026-11-09T21:50:23Z,AF,feat,0,feat(templates): move sections up and down in the builder
+frontend,1d9f87d,2026-11-09T21:48:53Z,AF,feat,0,feat(templates): rename and delete sections in the builder
+frontend,cb2554c,2026-11-09T21:48:08Z,AF,feat,0,feat(templates): add sections from the dashed box of the panel design
+frontend,9527b00,2026-11-09T21:47:25Z,AF,feat,0,feat(templates): show the version history in the builder panel
+frontend,9c4dbe4,2026-11-09T21:45:51Z,AF,feat,0,feat(templates): edit the template configuration in the builder panel
+frontend,9def38d,2026-11-09T21:44:58Z,AF,feat,0,feat(templates): lay out the template builder of the panel design
+frontend,c2abd33,2026-11-09T21:42:18Z,AF,test,0,test(templates): cover the builder actions on the demo and API paths
+frontend,bd429a3,2026-11-09T21:41:20Z,AF,feat,0,feat(api): translate the template builder error codes
+frontend,9366e1d,2026-11-09T21:40:49Z,AF,feat,0,feat(templates): reorder sections and items with a single batch call
+frontend,cb22ae8,2026-11-09T21:40:18Z,AF,feat,0,"feat(templates): create, save and delete items from the builder"
+frontend,0c18adf,2026-11-09T21:39:32Z,AF,feat,0,"feat(templates): create, rename and delete sections from the builder"
+frontend,2a7ccc5,2026-11-09T21:38:17Z,AF,feat,0,feat(templates): save the template configuration from the builder
+frontend,e1048e2,2026-11-09T21:37:17Z,AF,test,0,test(templates): cover the section and item validation
+frontend,6e19965,2026-11-09T21:37:17Z,AF,feat,0,feat(templates): validate sections and items with the API rules
+frontend,3d04739,2026-11-09T21:36:36Z,AF,test,0,test(templates): cover the builder loaders on the demo and API paths
+frontend,8c9e979,2026-11-09T21:36:35Z,AF,feat,0,feat(templates): load the template draft and versions for the builder
+frontend,63a0eaa,2026-11-09T21:35:37Z,AF,test,0,test(templates): cover the demo draft ordering and editing rules
+frontend,c7ce699,2026-11-09T21:34:53Z,AF,feat,0,feat(templates): mirror the draft editing operations in the demo store
+frontend,be10cb1,2026-11-09T21:34:03Z,AF,feat,0,"feat(templates): keep demo drafts with sections, items and versions"
+frontend,757559f,2026-11-09T21:32:30Z,AF,test,0,test(templates): cover the settings each response type accepts
+frontend,750d77d,2026-11-09T21:31:59Z,AF,feat,0,feat(templates): add the typed contract of the template builder
+frontend,7add2bf,2026-11-09T21:26:22Z,AF,merge,1,Merge pull request #45 from FieldOps-Project/feat/EP-04-template-list
+frontend,d4b104c,2026-11-09T21:19:50Z,AF,fix,0,fix(templates): fit the new template page on one screen
+frontend,1ff580d,2026-11-09T21:16:28Z,AF,fix,0,fix(templates): widen the model column only on very wide screens
+frontend,dd0fe65,2026-11-09T21:13:36Z,AF,fix,0,fix(templates): fit the template list on notebook widths
+frontend,b9cf227,2026-11-09T21:13:29Z,AF,fix,0,fix(templates): keep the situation badge on a single line
+frontend,1fde5be,2026-11-09T21:11:44Z,AF,docs,0,"docs(readme): document the template list, creation and demo store"
+frontend,def8811,2026-11-09T21:11:33Z,AF,feat,0,feat(shell): name the new template step in breadcrumbs
+frontend,f8bdc70,2026-11-09T21:11:18Z,AF,test,0,test(templates): cover the new template form validation and suggestions
+frontend,06be1cd,2026-11-09T21:10:47Z,AF,test,0,test(templates): cover creating a draft and changing a template status
+frontend,9dd3ccb,2026-11-09T21:09:45Z,AF,feat,0,feat(templates): inactivate and reactivate published templates
+frontend,fdc81c4,2026-11-09T21:08:52Z,AF,feat,0,feat(templates): add the new template page and the list shortcut
+frontend,c32605e,2026-11-09T21:07:11Z,AF,feat,0,feat(templates): send the template address to its builder
+frontend,34d7c87,2026-11-09T21:06:51Z,AF,feat,0,feat(templates): open the template in a builder placeholder
+frontend,9e0d87e,2026-11-09T21:05:35Z,AF,feat,0,feat(api): translate the template title conflict and not-published codes
+frontend,d71c4f5,2026-11-09T21:05:16Z,AF,feat,0,feat(templates): add the action that creates the draft and opens the builder
+frontend,56d5a39,2026-11-09T21:04:22Z,AF,test,0,test(templates): cover the new draft validation
+frontend,72fa179,2026-11-09T21:04:02Z,AF,feat,0,"feat(templates): validate the new draft title, description and category"
+frontend,b2291e6,2026-11-09T21:03:33Z,AF,feat,0,feat(templates): add a loading skeleton to the template list
+frontend,934b61f,2026-11-09T21:03:16Z,AF,feat,0,"feat(templates): list templates with search, status and category filters"
+frontend,af09e9c,2026-11-09T21:02:34Z,AF,feat,0,feat(templates): add the template status badge with the current version
+frontend,c061401,2026-11-09T21:02:16Z,AF,test,0,test(templates): cover the demo and API paths of the template loader
+frontend,03d1b2d,2026-11-09T21:01:55Z,AF,feat,0,feat(templates): load the templates with a single switch to the API
+frontend,0aef021,2026-11-09T21:01:18Z,AF,test,0,"test(templates): cover the demo store filters, creation and status rule"
+frontend,7edfb8c,2026-11-09T21:00:47Z,AF,feat,0,feat(templates): add the in-memory demo store for development
+frontend,8c1f256,2026-11-09T21:00:02Z,AF,test,0,test(templates): cover the template situation and the status change rule
+frontend,3e0237e,2026-11-09T20:59:44Z,AF,feat,0,feat(templates): add the typed contract of inspection templates
+frontend,a9f5871,2026-11-09T20:23:10Z,AF,merge,1,Merge pull request #44 from FieldOps-Project/feat/EP-10-dashboard
+frontend,d785e11,2026-11-09T20:18:10Z,AF,fix,0,fix(dashboard): show the card watermarks whole and vertically centred
+frontend,6e40dbf,2026-11-09T20:18:07Z,AF,fix,0,fix(dashboard): align the side cards with the status card
+frontend,2842fb5,2026-11-09T20:15:37Z,AF,style,0,style(shell): hide the scrollbar of the panel content area
+frontend,76da488,2026-11-09T20:15:37Z,AF,style,0,style(shell): hide the scrollbar of the menu and the drawer
+frontend,bfdb193,2026-11-09T20:15:37Z,AF,feat,0,feat(ui): add a utility that scrolls without a visible scrollbar
+frontend,68a8cfa,2026-11-09T20:14:12Z,AF,style,0,style(shell): use a thin scrollbar on the menu column
+frontend,5740c6a,2026-11-09T20:14:12Z,AF,fix,0,fix(dashboard): keep the card watermarks clear of the titles
+frontend,707344e,2026-11-09T20:14:08Z,AF,fix,0,fix(dashboard): keep the status tiles of a row at the same height
+frontend,373c8ed,2026-11-09T20:13:31Z,AF,docs,0,"docs(readme): document the dashboard indicators, contract and demo data"
+frontend,f0588b7,2026-11-09T20:11:58Z,AF,fix,0,fix(shell): keep a single readable space in the environment label
+frontend,2ae5dff,2026-11-09T20:10:34Z,AF,test,0,test(dashboard): cover the recent non-conformities table and its empty state
+frontend,5036e58,2026-11-09T20:10:23Z,AF,test,0,"test(dashboard): cover the status, pending reviews and delayed cards"
+frontend,a371fe0,2026-11-09T20:09:35Z,AF,feat,0,feat(dashboard): add a loading skeleton with the grid of the final screen
+frontend,77f102e,2026-11-09T20:09:06Z,AF,feat,0,feat(dashboard): mark only the block whose endpoint is not published yet
+frontend,7434ef4,2026-11-09T20:08:39Z,AF,feat,0,feat(dashboard): keep the recent non-conformities card when there is none
+frontend,82178c4,2026-11-09T20:07:32Z,AF,feat,0,feat(dashboard): guide an operation that has no inspection yet
+frontend,3543544,2026-11-09T20:06:58Z,AF,feat,0,feat(dashboard): compose the dashboard of the panel design
+frontend,9361eaf,2026-11-09T20:06:23Z,AF,feat,0,feat(dashboard): stack the recent non-conformities as cards on small screens
+frontend,c9a07f7,2026-11-09T20:05:51Z,AF,fix,0,fix(shell): drop the double space in the environment label
+frontend,3983cb5,2026-11-09T20:05:51Z,AF,fix,0,fix(shell): scroll the whole menu column on short screens
+frontend,3b827ab,2026-11-09T20:05:09Z,AF,feat,0,feat(dashboard): add the recent non-conformities table
+frontend,ed1106d,2026-11-09T20:04:32Z,AF,feat,0,feat(dashboard): add the non-conformity severity badge
+frontend,27f900c,2026-11-09T20:04:03Z,AF,feat,0,feat(dashboard): add the delayed inspections card with the daily variation
+frontend,9726ae1,2026-11-09T20:03:35Z,AF,feat,0,feat(dashboard): add the pending reviews card
+frontend,b0d6bde,2026-11-09T20:03:22Z,AF,refactor,0,refactor(dashboard): share the card frame between the dashboard blocks
+frontend,cdc09bc,2026-11-09T20:02:53Z,AF,feat,0,feat(dashboard): add the inspection pipeline card with the active total
+frontend,e0dd528,2026-11-09T20:02:25Z,AF,feat,0,feat(dashboard): add the status tile that links to the filtered list
+frontend,476b28c,2026-11-09T20:01:53Z,AF,feat,0,feat(dashboard): add the page heading with the review and create shortcuts
+frontend,5c43716,2026-11-09T19:59:41Z,AF,feat,0,feat(shell): hide the redundant breadcrumb on the dashboard
+frontend,49fce17,2026-11-09T19:59:35Z,AF,style,0,style(shell): match the header height and spacing of the panel design
+frontend,4175b37,2026-11-09T19:59:21Z,AF,test,0,test(shell): cover the account menu
+frontend,cdf1931,2026-11-09T19:59:04Z,AF,feat,0,feat(shell): move identity and sign out into the avatar menu
+frontend,76d7406,2026-11-09T19:58:01Z,AF,feat,0,feat(shell): add the profile badge to the header
+frontend,0dc80b4,2026-11-09T19:56:31Z,AF,feat,0,feat(shell): show the environment label of the panel design in the header
+frontend,dfe10c8,2026-11-09T19:55:35Z,AF,feat,0,feat(shell): add the help shortcut and the header divider
+frontend,6904095,2026-11-09T19:54:44Z,AF,feat,0,feat(shell): add the notifications button with an honest empty panel
+frontend,b1dc601,2026-11-09T19:54:10Z,AF,feat,0,feat(ui): add a dismissible popover anchored to a button
+frontend,923626f,2026-11-09T19:53:26Z,AF,feat,0,feat(shell): add the workspace search field to the header
+frontend,d595519,2026-11-09T19:52:53Z,AF,feat,0,feat(search): add the workspace search results page
+frontend,6608a5d,2026-11-09T19:52:08Z,AF,feat,0,feat(search): search every panel area with the filters of its own list
+frontend,4482ca0,2026-11-09T19:51:12Z,AF,feat,0,feat(shell): widen the menu and hand navigation to the drawer below 1024px
+frontend,4859649,2026-11-09T19:50:55Z,AF,feat,0,feat(shell): add the new inspection shortcut and account links to the menu footer
+frontend,4bfd1ba,2026-11-09T19:50:21Z,AF,feat,0,"feat(shell): name the settings, support and search pages in breadcrumbs"
+frontend,571c30e,2026-11-09T19:50:21Z,AF,feat,0,feat(support): add the support page with documentation and issue links
+frontend,04d3076,2026-11-09T19:49:43Z,AF,feat,0,feat(settings): add the account settings page
+frontend,4f35b58,2026-11-09T19:49:42Z,AF,feat,0,"feat(shell): label every environment, production included"
+frontend,359631d,2026-11-09T19:48:41Z,AF,feat,0,feat(shell): rebuild the menu brand block of the panel design
+frontend,0efb69b,2026-11-09T19:48:24Z,AF,refactor,0,refactor(shell): share the menu content between the sidebar and the drawer
+frontend,2c12bf3,2026-11-09T19:47:57Z,AF,feat,0,feat(shell): drop the collapse toggle absent from the panel design
+frontend,ea32187,2026-11-09T19:47:28Z,AF,feat,0,feat(shell): title-case the menu labels as in the panel design
+frontend,1953935,2026-11-09T19:47:10Z,AF,feat,0,feat(shell): mark the active area with a side accent bar
+frontend,9633487,2026-11-09T19:46:54Z,AF,feat,0,feat(shell): use the Material outlined icons of the panel design
+frontend,a5de013,2026-11-09T19:46:27Z,AF,feat,0,feat(ui): add a solid variant to the brand mark
+frontend,1882528,2026-11-09T19:45:48Z,AF,test,0,test(dashboard): keep the indicators consistent with the list filters
+frontend,c8d42b7,2026-11-09T19:45:14Z,AF,feat,0,feat(dashboard): load the indicators with a single switch to the API
+frontend,ca1d5d5,2026-11-09T19:45:14Z,AF,feat,0,feat(dal): add an optional read for endpoints not published yet
+frontend,92f9d81,2026-11-09T19:44:35Z,AF,feat,0,feat(dashboard): add demo recent non-conformities
+frontend,0bef6f1,2026-11-09T19:44:29Z,AF,feat,0,feat(dashboard): derive the demo indicators from the demo inspections
+frontend,1235b06,2026-11-09T19:43:08Z,AF,feat,0,feat(format): add a relative date label for recent records
+frontend,e6cd56c,2026-11-09T19:42:38Z,AF,test,0,test(dashboard): cover the active total and the overdue variation
+frontend,7819ff7,2026-11-09T19:42:12Z,AF,feat,0,feat(dashboard): add the typed contract of the dashboard indicators
+frontend,694c42d,2026-10-23T23:04:38Z,AF,fix,0,fix(ui): use the singular when the list has a single result
+frontend,c118e79,2026-10-23T23:03:32Z,AF,feat,0,feat(inspections): export the filtered inspections as CSV
+frontend,6b112e3,2026-10-23T23:02:22Z,AF,feat,0,feat(inspections): rebuild the inspections list
+frontend,6eb32e1,2026-10-23T23:00:36Z,AF,feat,0,feat(inspections): add the inspection filters panel
+frontend,d4b078c,2026-10-23T22:59:22Z,AF,feat,0,feat(ui): add numbered pagination for list footers
+frontend,5a25d0b,2026-10-23T22:58:39Z,AF,feat,0,feat(inspections): load the inspection list with URL filters
+frontend,6dcdbaf,2026-10-23T22:57:03Z,AF,feat,0,feat(inspections): define the inspection list contract
+frontend,88fa714,2026-10-23T22:49:51Z,AF,feat,0,feat(inspections): link the scheduling form from the inspections list
+frontend,4fdd623,2026-10-23T22:49:21Z,AF,feat,0,feat(shell): name the new inspection step in the breadcrumbs
+frontend,6ca1f08,2026-10-23T22:48:31Z,AF,feat,0,feat(inspections): add the new inspection page
+frontend,aae6ad1,2026-10-23T22:47:41Z,AF,feat,0,feat(inspections): add the inspection scheduling form
+frontend,c07206f,2026-10-23T22:45:40Z,AF,feat,0,feat(ui): allow a lighter note next to a field label
+frontend,a110757,2026-10-23T22:44:32Z,AF,feat,0,feat(inspections): schedule inspections with immediate assignment
+frontend,ecfd4fa,2026-10-23T22:42:44Z,AF,fix,0,fix(api): describe inactive client and site errors as scheduling errors
+frontend,b38d239,2026-10-23T22:41:57Z,AF,feat,0,feat(inspections): validate the inspection schedule
+frontend,771e7a0,2026-10-23T22:41:14Z,AF,feat,0,feat(catalog): load active equipment and users by role for selectors
+frontend,eb6d7f6,2026-10-23T22:40:50Z,AF,feat,0,feat(inspections): define the inspection scheduling contract
+frontend,1eceb3c,2026-10-23T22:40:16Z,AF,feat,0,feat(ui): highlight the label of a field with an error
+frontend,4ab355a,2026-10-23T22:14:56Z,AF,feat,0,feat(inspections): add the inspection review screen
+frontend,1db89f3,2026-10-23T21:30:23Z,AF,merge,1,Merge pull request #43 from FieldOps-Project/fix/EP-02-redirect-control-chars
+frontend,5d67660,2026-10-23T21:30:13Z,AF,merge,1,Merge pull request #39 from FieldOps-Project/feat/EP-01-narrative-design-tokens
+frontend,caa9cb9,2026-10-23T21:30:05Z,AF,merge,1,Merge pull request #42 from FieldOps-Project/feat/EP-02-panel-role-guard
+frontend,57a105d,2026-10-23T21:29:44Z,AF,merge,1,Merge pull request #41 from FieldOps-Project/feat/EP-02-login-screen-layout
+frontend,53ee0fa,2026-10-23T21:28:32Z,AF,merge,1,Merge pull request #40 from FieldOps-Project/feat/EP-01-form-field-icons
+frontend,fa9b639,2026-10-23T21:28:01Z,AF,merge,1,Merge pull request #38 from FieldOps-Project/fix/EP-01-focus-ring-layer
+frontend,efdef7a,2026-10-23T21:21:59Z,AF,fix,0,fix(auth): reject control characters in post-login redirect targets
+frontend,9bafe37,2026-10-23T21:20:39Z,AF,feat,0,feat(auth): keep technicians and client viewers out of the admin panel
+frontend,c7f30da,2026-10-23T21:18:05Z,AF,feat,0,feat(auth): rebuild the login screen with immediate validation
+frontend,f47e603,2026-10-23T21:14:48Z,AF,feat,0,feat(ui): add icons and a password field to the shared form fields
+frontend,d32e71c,2026-10-23T21:12:55Z,AF,feat,0,"feat(design): adopt the FieldOps Narrative palette, Inter and robotic arm mark"
+frontend,0a91ea7,2026-10-23T21:11:16Z,AF,fix,0,fix(ui): stop the global focus outline from overriding field rings
+frontend,3df2174,2026-10-19T23:31:23Z,JV,chore,0,chore(docker): add the production image for the admin panel
+frontend,1463d87,2026-10-19T23:31:22Z,JV,chore,0,chore(docker): exclude local artifacts from the image context
+frontend,aa5b1aa,2026-10-19T23:31:21Z,JV,build,0,build(web): emit a standalone server for container images
+frontend,60d8d2c,2026-10-19T23:31:20Z,JV,feat,0,feat(dashboard): show live totals from the API
+frontend,c6de748,2026-10-19T23:31:20Z,JV,feat,0,feat(inspections): list inspections with status filters
+frontend,68fda53,2026-10-19T23:31:20Z,JV,feat,0,feat(equipment): add the printable QR label page
+frontend,8db9699,2026-10-19T23:31:19Z,JV,feat,0,feat(equipment): add the edit equipment page
+frontend,5ae3a3e,2026-10-19T23:31:19Z,JV,feat,0,feat(equipment): add the equipment details page
+frontend,71b27c4,2026-10-19T23:31:18Z,JV,feat,0,feat(equipment): add the create equipment page
+frontend,54cfe1c,2026-10-19T23:31:17Z,JV,feat,0,feat(equipment): list equipment with filters and QR lookup
+frontend,a7093e8,2026-10-19T23:31:17Z,JV,feat,0,feat(equipment): add print styles for the equipment label
+frontend,bcde137,2026-10-19T23:31:17Z,JV,feat,0,feat(equipment): add the label print button
+frontend,3c2cdb3,2026-10-19T23:31:16Z,JV,feat,0,feat(equipment): look up equipment by QR code
+frontend,0ce0dc5,2026-10-19T23:31:15Z,JV,feat,0,feat(equipment): render the equipment QR code as SVG on the server
+frontend,4f22568,2026-10-19T23:31:15Z,JV,feat,0,feat(equipment): add the reusable equipment list
+frontend,6683ff8,2026-10-19T23:31:14Z,JV,feat,0,feat(equipment): add actions to change equipment status
+frontend,cc44d11,2026-10-19T23:31:13Z,JV,feat,0,feat(equipment): add the equipment form
+frontend,83a1546,2026-10-19T23:31:12Z,JV,feat,0,feat(equipment): add server actions to manage equipment
+frontend,e25906f,2026-10-19T23:31:11Z,JV,feat,0,feat(sites): list the equipment of a site
+frontend,cec9b74,2026-10-19T23:31:11Z,JV,feat,0,feat(sites): add the edit site page
+frontend,cb7b809,2026-10-19T23:31:10Z,JV,feat,0,feat(sites): add the site details page
+frontend,f343974,2026-10-19T23:31:09Z,JV,feat,0,feat(sites): add the create site page
+frontend,4e178ae,2026-10-19T23:31:08Z,JV,feat,0,feat(sites): list sites with filters and pagination
+frontend,bf272e6,2026-10-19T23:31:08Z,JV,feat,0,feat(sites): add the reusable sites list
+frontend,86b9364,2026-10-19T23:31:07Z,JV,feat,0,feat(sites): add actions to change site status
+frontend,0d2ce74,2026-10-19T23:31:07Z,JV,feat,0,feat(sites): add the site form
+frontend,e8998d6,2026-10-19T23:31:06Z,JV,feat,0,feat(sites): add server actions to manage sites
+frontend,7e31bb8,2026-10-19T23:31:05Z,JV,feat,0,feat(clients): list the sites of a client
+frontend,33b1043,2026-10-19T23:31:04Z,JV,feat,0,feat(clients): add the edit client page
+frontend,cd4b753,2026-10-19T23:31:04Z,JV,feat,0,feat(clients): add the client details page
+frontend,e0f6475,2026-10-19T23:31:02Z,JV,feat,0,feat(clients): add the create client page
+frontend,42f734f,2026-10-19T23:31:01Z,JV,feat,0,feat(clients): list clients with filters and pagination
+frontend,52b152b,2026-10-19T23:31:01Z,JV,feat,0,feat(clients): add actions to change client status
+frontend,159a5c2,2026-10-19T23:31:00Z,JV,feat,0,feat(clients): add the client form
+frontend,978723e,2026-10-19T23:30:59Z,JV,feat,0,feat(clients): add server actions to manage clients
+frontend,9d81a31,2026-10-19T23:30:58Z,JV,feat,0,feat(users): add the edit user page
+frontend,b5552ef,2026-10-19T23:30:56Z,JV,feat,0,feat(users): add the user details page
+frontend,ac1628d,2026-10-19T23:30:55Z,JV,feat,0,feat(users): add the create user page
+frontend,31458be,2026-10-19T23:30:53Z,JV,feat,0,feat(users): list users with filters and pagination
+frontend,e8a37c9,2026-10-19T23:30:53Z,JV,feat,0,feat(users): add actions to change user access
+frontend,d229cf3,2026-10-19T23:30:51Z,JV,feat,0,feat(users): add the user form
+frontend,0ba2991,2026-10-19T23:30:50Z,JV,feat,0,feat(users): add server actions to manage users
+frontend,5f8d9ff,2026-10-19T23:30:49Z,JV,feat,0,feat(catalog): load client and site options for forms
+frontend,46ca015,2026-10-19T23:30:48Z,JV,feat,0,feat(auth): explain missing permissions on the forbidden page
+frontend,9affc1a,2026-10-19T23:30:47Z,JV,feat,0,feat(web): add the not-found page for the admin panel
+frontend,3205f8d,2026-10-19T23:30:46Z,JV,feat,0,feat(web): add the error boundary for the admin panel
+frontend,72ef65e,2026-10-19T23:30:46Z,JV,feat,0,feat(shell): label the equipment tag route in breadcrumbs
+frontend,1b2c157,2026-10-19T23:30:45Z,JV,feat,0,feat(ui): add the confirmable action button
+frontend,ed7eb14,2026-10-19T23:30:45Z,JV,feat,0,feat(ui): add form actions with a pending submit button
+frontend,97bc109,2026-10-19T23:30:44Z,JV,feat,0,feat(ui): add form fields bound to API field errors
+frontend,fc71806,2026-10-19T23:30:43Z,JV,feat,0,feat(ui): add the URL-driven filter bar
+frontend,3aa9e11,2026-10-19T23:30:43Z,JV,feat,0,feat(ui): add URL-driven pagination
+frontend,d6bd5b9,2026-10-19T23:30:42Z,JV,feat,0,feat(ui): add the data table components
+frontend,9c38848,2026-10-19T23:30:41Z,JV,feat,0,feat(ui): add the empty state component
+frontend,deab25f,2026-10-19T23:30:41Z,JV,feat,0,feat(ui): add the notice component for feedback messages
+frontend,bd8ab92,2026-10-19T23:30:40Z,JV,feat,0,feat(ui): add the status badge component
+frontend,b33a8cd,2026-10-19T23:30:39Z,JV,feat,0,feat(ui): add the page header component
+frontend,b9b4ce4,2026-10-19T23:30:39Z,JV,feat,0,"feat(ui): add shared styles for buttons, inputs and cards"
+frontend,60f34a2,2026-10-19T23:30:38Z,JV,feat,0,feat(auth): render the real login form on the access screen
+frontend,ba6e89c,2026-10-19T23:30:38Z,JV,feat,0,feat(auth): add the login form with pending and error states
+frontend,0402053,2026-10-19T23:30:37Z,JV,feat,0,feat(auth): sign in and out against the API
+frontend,ece18b5,2026-10-19T23:30:37Z,JV,refactor,0,refactor(auth): remove the development sign-in stub
+frontend,a4538bb,2026-10-19T23:30:36Z,JV,chore,0,chore(web): drop the placeholder from the features folder
+frontend,19fbe62,2026-10-19T23:30:36Z,JV,feat,0,feat(auth): add the token refresh route handler
+frontend,2c0e289,2026-10-19T23:30:35Z,JV,test,0,test(auth): cover session refresh and redirects in the proxy
+frontend,17235aa,2026-10-19T23:30:35Z,JV,feat,0,feat(auth): refresh expired sessions before reaching protected routes
+frontend,9590cc6,2026-10-19T23:30:34Z,JV,feat,0,feat(auth): add the data access layer with role checks and token refresh
+frontend,d8fd5ea,2026-10-19T23:30:34Z,JV,feat,0,feat(auth): read the session from the API instead of the development stub
+frontend,e2beb4b,2026-10-19T23:30:33Z,JV,feat,0,feat(api): add the server-only API client with bearer auth
+frontend,19645a4,2026-10-19T23:30:33Z,JV,test,0,test(api): cover API error message translation
+frontend,e2c55c5,2026-10-19T23:30:32Z,JV,feat,0,feat(api): translate API error codes into pt-BR messages
+frontend,2386298,2026-10-19T23:30:31Z,JV,feat,0,feat(api): map the API error envelope to a typed error
+frontend,5f01714,2026-10-19T23:30:30Z,JV,chore,0,chore(api): drop the placeholder from the API layer
+frontend,d0a6735,2026-10-19T23:30:30Z,JV,feat,0,feat(auth): define the httpOnly session cookies
+frontend,c64f2a9,2026-10-19T23:30:29Z,JV,test,0,test(web): cover redirect target sanitization
+frontend,b4b7377,2026-10-19T23:30:28Z,JV,feat,0,feat(web): sanitize post-login redirect targets
+frontend,9ec5879,2026-10-19T23:30:28Z,JV,feat,0,feat(web): model server action form state with field errors
+frontend,4ec4ab4,2026-10-19T23:30:27Z,JV,feat,0,feat(web): read typed values from submitted form data
+frontend,9f2a4c1,2026-10-19T23:30:27Z,JV,feat,0,feat(web): parse list filters and pagination from the URL
+frontend,f6dfa97,2026-10-19T23:30:26Z,JV,feat,0,feat(web): add pt-BR date formatters
+frontend,4e16107,2026-10-19T23:30:25Z,JV,feat,0,feat(web): validate resource ids taken from route params
+frontend,829c0c2,2026-10-19T23:30:25Z,JV,feat,0,feat(domain): add the inspection model and status labels
+frontend,a0d9f0a,2026-10-19T23:30:24Z,JV,feat,0,feat(domain): add the equipment model and QR code generation
+frontend,f054022,2026-10-19T23:30:23Z,JV,feat,0,feat(domain): add the site model and status labels
+frontend,3f95226,2026-10-19T23:30:22Z,JV,feat,0,feat(domain): add the client model and status labels
+frontend,3db37b7,2026-10-19T23:30:21Z,JV,feat,0,feat(domain): describe users with status tones and manager roles
+frontend,390600f,2026-10-19T23:30:21Z,JV,feat,0,feat(domain): add the paginated response model and status tones
+frontend,6813cbf,2026-10-19T23:30:20Z,JV,chore,0,chore(config): document the session cookie secure flag
+frontend,9e03c68,2026-10-19T23:30:20Z,JV,build,0,build(deps): lock qrcode and its type definitions
+frontend,6a68c67,2026-10-19T23:30:19Z,JV,build,0,build(deps): add qrcode for server-rendered equipment labels
+frontend,80f8265,2026-09-21T21:09:58Z,AF,merge,1,Merge pull request #36 from FieldOps-Project/fix/EP-01-restore-admin-shell
+frontend,acf7843,2026-09-21T21:08:40Z,AF,fix,1,fix(web): restore the administrative shell stranded outside develop
+frontend,f48dde0,2026-09-04T22:59:36Z,FM,merge,1,Merge pull request #34 from FieldOps-Project/chore/EP-01-bootstrap-web
+frontend,9a5fb4b,2026-09-28T21:19:34Z,AF,fix,0,fix(ui): stop the global focus outline from doubling the text field ring
+frontend,4751733,2026-09-28T21:19:04Z,AF,fix,0,fix(auth): fit the login screen in the viewport without scrolling
+frontend,21a065c,2026-09-28T19:44:44Z,AF,docs,0,docs(web): document the authentication flow in the README
+frontend,94b3920,2026-09-28T19:44:04Z,AF,refactor,0,refactor(auth): remove the temporary development sign-in
+frontend,1dabc7f,2026-09-28T19:43:53Z,AF,test,0,test(auth): cover the sign-out revocation and its offline fallback
+frontend,24d5125,2026-09-28T19:43:35Z,AF,feat,0,feat(auth): revoke the refresh token on sign-out
+frontend,c70561c,2026-09-28T19:43:23Z,AF,feat,0,feat(session): resolve the signed-in user from GET /auth/me
+frontend,819138a,2026-09-28T19:42:57Z,AF,feat,0,feat(auth): replace the development entry with the login screen
+frontend,d2e623a,2026-09-28T19:42:33Z,AF,test,0,"test(auth): cover the login form validation, alert and password toggle"
+frontend,f226964,2026-09-28T19:42:04Z,AF,feat,0,feat(auth): add the login form
+frontend,e2cd252,2026-09-28T19:41:21Z,AF,feat,0,feat(ui): add the submit button with pending state
+frontend,fbc8385,2026-09-28T19:41:09Z,AF,feat,0,feat(ui): add the password field with visibility toggle
+frontend,2c898e4,2026-09-28T19:40:57Z,AF,feat,0,"feat(ui): add the text field with label, icon and error message"
+frontend,28687f8,2026-09-28T19:40:38Z,AF,test,0,"test(auth): cover the login action for success, invalid, inactive and offline"
+frontend,df89d5a,2026-09-28T19:37:53Z,AF,feat,0,feat(auth): add the login server action against POST /auth/login
+frontend,055fdcc,2026-09-28T19:37:14Z,AF,feat,0,feat(session): add the session cookie helpers
+frontend,8c7846a,2026-09-28T19:36:58Z,AF,test,0,test(auth): cover the authentication error messages
+frontend,1cb32cf,2026-09-28T19:36:58Z,AF,feat,0,feat(auth): translate authentication errors into business messages
+frontend,b06b077,2026-09-28T19:36:27Z,AF,test,0,test(auth): cover the redirect target validation
+frontend,ed0c542,2026-09-28T19:36:27Z,AF,feat,0,feat(auth): accept only same-origin redirect targets after login
+frontend,1999932,2026-09-28T19:36:01Z,AF,feat,0,feat(auth): add the login form schema
+frontend,bdc053b,2026-09-28T19:36:00Z,AF,feat,0,feat(auth): add the authentication contract types
+frontend,e9e0d7c,2026-09-28T19:35:41Z,AF,feat,0,feat(api): add the server-only HTTP client for the REST API
+frontend,f48ebd0,2026-09-28T19:35:27Z,AF,feat,0,feat(api): add the ApiError envelope returned by the REST API
+frontend,c25ff38,2026-09-28T19:35:11Z,AF,feat,0,feat(ui): draw the brand mark as the robotic arm of the field app
+frontend,a7537a9,2026-09-28T19:34:54Z,AF,feat,0,feat(design): switch the typography to Inter
+frontend,023fd9e,2026-09-28T19:34:32Z,AF,feat,0,feat(design): replace the palette with the FieldOps Narrative tokens
+frontend,b825966,2026-09-28T19:34:03Z,AF,build,0,build(web): add zod for form and payload validation
+frontend,df10d65,2026-08-11T17:49:53Z,JV,merge,1,Merge pull request #33 from FieldOps-Project/develop
+app,a9eae21,2026-08-11T18:44:01Z,FM,fix,0,fix(typescript): declare CSS module so typecheck passes on a fresh clone
+app,8d61b7d,2026-08-11T13:22:32Z,FM,docs,0,"docs: document setup, environment and architecture decisions"
+app,44d0eb2,2026-08-11T13:22:26Z,FM,feat,0,feat(app): add root layout with providers and application routes
+app,95726c8,2026-08-11T13:22:26Z,FM,feat,0,feat(home): add home screen with environment and API health check
+app,9dab144,2026-08-11T13:22:18Z,FM,feat,0,feat(application): add TanStack Query client with field-use defaults
+app,7579bbb,2026-08-11T13:22:18Z,FM,feat,0,feat(api): add axios client mapping failures to domain errors
+app,adf1b02,2026-08-11T13:22:18Z,FM,feat,0,feat(domain): add Result type and domain error model
+app,b7a03fd,2026-08-11T13:22:00Z,FM,feat,0,feat(config): validate environment variables with Zod
+app,f8fdd22,2026-08-11T13:22:00Z,FM,feat,0,feat(design-system): add navigation theme and base components
+app,1ec3b7b,2026-08-11T13:21:52Z,FM,feat,0,feat(styling): set up NativeWind with shared design tokens
+app,0997980,2026-08-11T13:21:52Z,FM,chore,0,"chore(lint): add ESLint, Prettier and layer boundary rules"
+app,457ae87,2026-08-11T13:21:44Z,FM,chore,0,chore(structure): create layer and feature folders from document 11.4
+app,eec03a7,2026-08-11T13:21:25Z,FM,chore,0,chore(typescript): enable strict mode and @/ import aliases
+app,9b824da,2026-08-11T13:21:18Z,FM,chore,0,chore: bootstrap Expo project with TypeScript and Expo Router
+app,6fdff76,2026-08-10T22:50:33Z,JV,outro,0,Initial commit
+app,8f20fcc,2026-08-21T23:28:48Z,FM,ci,0,"ci(app): add GitHub Actions pipeline for typecheck, lint, tests and expo-doctor"
+app,bba8347,2026-08-21T23:14:25Z,FM,merge,1,Merge pull request #44 from FieldOps-Project/feat/EP-01-http-client
+app,f06c070,2026-08-18T00:40:09Z,FM,refactor,0,refactor(api): type the error envelope without runtime schema validation
+app,bf725b9,2026-08-17T23:28:43Z,FM,feat,0,feat(api): add typed failure taxonomy and standardized query keys
+app,8a771f9,2026-08-17T22:48:59Z,FM,merge,1,Merge pull request #43 from FieldOps-Project/feat/EP-01-design-system
+app,0e721b4,2026-08-14T23:13:31Z,FM,feat,0,"feat(EP-01): design system com selo, campo, lista e estados visuais"
+app,b64fb3c,2026-08-14T22:15:09Z,FM,merge,1,Merge pull request #42 from FieldOps-Project/feat/EP-01-navigation-routes
+app,44b9f9d,2026-08-11T19:49:13Z,FM,refactor,0,refactor: trim redundant doc comments
+app,eefff48,2026-08-11T19:49:05Z,FM,fix,0,fix(design-system): render white label on solid buttons
+app,023fc5e,2026-08-11T19:32:44Z,FM,docs,0,docs: document the navigation tree and route protection
+app,80e82e1,2026-08-11T19:32:44Z,FM,feat,0,feat(app): add public and protected route groups with session guard
+app,251e639,2026-08-11T19:32:34Z,FM,feat,0,feat(home): rework home tab with quick actions and session greeting
+app,e62264e,2026-08-11T19:32:34Z,FM,feat,0,feat(sync): add synchronization tab and queue detail
+app,e5e7f38,2026-08-11T19:32:34Z,FM,feat,0,feat(scanner): add code scanner screen
+app,a2c2d98,2026-08-11T19:32:34Z,FM,feat,0,feat(evidence): add capture and preview keeping the stack constant
+app,51cbc26,2026-08-11T19:32:22Z,FM,feat,0,feat(checklist): add checklist screen with evidence tracking
+app,1a6c833,2026-08-11T19:32:22Z,FM,feat,0,"feat(inspections): add list, details and inspection sub-screens"
+app,56f3e4e,2026-08-11T19:32:22Z,FM,feat,0,feat(auth): add login and profile screens
+app,6317ac4,2026-08-11T19:32:13Z,FM,feat,0,feat(components): add development-only navigation stack badge
+app,aa3dcbf,2026-08-11T19:32:13Z,FM,feat,0,"feat(design-system): add card, loading and below-header safe area"
+app,303c51f,2026-08-11T19:32:13Z,FM,feat,0,feat(application): share checklist draft state across evidence screens
+app,e7275ce,2026-08-11T19:32:13Z,FM,feat,0,feat(application): add session context restored on start-up
+app,54511e5,2026-08-11T19:32:01Z,FM,feat,0,feat(storage): persist the session in device secure storage
+app,9535020,2026-08-11T19:32:01Z,FM,feat,0,feat(domain): add session and inspection models
+app,90dd66a,2026-08-11T19:32:01Z,FM,chore,0,chore(deps): add expo-secure-store and vector icons
+app,f18efb1,2026-08-11T19:15:10Z,JV,merge,1,Merge pull request #41 from FieldOps-Project/docs/EP-01-repo-conventions
+app,a8540ee,2026-08-11T19:14:23Z,JV,docs,0,docs(repo): add issue and pr templates
+app,e006d76,2026-08-11T19:06:08Z,JV,merge,1,Merge pull request #40 from FieldOps-Project/chore/EP-01-bootstrap-expo
+app,b25f152,2026-11-11T19:50:40Z,FM,merge,1,Merge pull request #61 from FieldOps-Project/fix/EP-07-scanner-review-followups
+app,9029e3d,2026-11-11T19:48:57Z,FM,docs,0,docs(readme): state the no-comments rule and the scanner exit confirmation
+app,d9264f6,2026-11-11T19:48:57Z,FM,refactor,0,refactor(repositories): share the equipment and status row mappers
+app,7c3ca84,2026-11-11T19:48:57Z,FM,fix,0,fix(scanner): confirm the divergence on every way out of the screen
+app,559b5f9,2026-11-11T19:48:57Z,FM,fix,0,fix(equipment): answer every scanned code and accept codes up to the backend limit
+app,059d239,2026-11-11T15:51:34Z,FM,merge,1,Merge pull request #60 from FieldOps-Project/feat/EP-07-qr-code
+app,4a24c9a,2026-11-11T15:49:45Z,FM,fix,0,fix(scanner): recover from failed lookups and never skip the comparison
+app,cd4b017,2026-11-11T15:46:26Z,FM,docs,0,docs(readme): describe the QR code reading and its scope rule
+app,227fb58,2026-11-11T15:46:26Z,FM,feat,0,"feat(scanner): read the equipment QR code once per cycle, with a manual fallback"
+app,2c1fc23,2026-11-11T15:46:26Z,FM,feat,0,feat(equipment): identify an equipment by its code within the technician scope
+app,70944ec,2026-11-11T15:41:40Z,FM,merge,1,Merge pull request #59 from FieldOps-Project/refactor/EP-01-remove-code-comments
+app,da5f22c,2026-11-11T15:40:40Z,FM,refactor,0,refactor: remove comments from the app source
+app,4e48faa,2026-11-11T14:51:26Z,FM,merge,1,Merge pull request #58 from FieldOps-Project/feat/EP-07-photo-evidence
+app,0410088,2026-11-11T14:49:02Z,FM,fix,0,fix(evidence): keep relative paths and tell failed uploads apart
+app,2a7aece,2026-11-11T14:44:40Z,FM,docs,0,docs(readme): describe how photo evidences are captured and stored
+app,0df74e9,2026-11-11T14:44:40Z,FM,feat,0,"feat(evidence): capture, preview and attach photos to the checklist item"
+app,0d9455d,2026-11-11T14:44:40Z,FM,feat,0,"feat(evidence): resize, compress and keep photos in the persistent directory"
+app,224a2b2,2026-11-11T14:44:40Z,FM,chore,0,"chore(deps): add the camera, image manipulation and file system modules"
+app,47cce2e,2026-11-11T14:22:34Z,FM,merge,1,Merge pull request #56 from FieldOps-Project/feat/EP-08-local-store-and-outbox
+app,46c55e0,2026-11-11T14:21:12Z,FM,merge,1,Merge branch 'develop' into feat/EP-08-local-store-and-outbox
+app,367833d,2026-11-11T14:21:07Z,FM,merge,1,Merge pull request #57 from FieldOps-Project/chore/EP-01-expo-sdk-patches-2
+app,62efb8d,2026-11-11T14:19:25Z,FM,chore,0,chore(deps): align packages with the latest Expo SDK 57 patches
+app,d40214e,2026-11-11T14:16:27Z,FM,fix,0,fix(sync): judge a cancellation by its attempts and link late answers
+app,6cbe803,2026-11-11T14:11:38Z,FM,docs,0,docs(readme): describe the local schema and the outbox rules
+app,282d3c5,2026-11-11T14:11:38Z,FM,test,0,"test(database): cover the schema upgrade, the indexes and the outbox rules"
+app,f644f1c,2026-11-11T14:11:38Z,FM,feat,0,feat(sync): queue evidence uploads and removals in the outbox
+app,1ce9162,2026-11-11T14:11:38Z,FM,feat,0,feat(database): complete the local schema of document 10.13
+app,19b815f,2026-11-11T14:02:07Z,FM,merge,1,Merge pull request #55 from FieldOps-Project/feat/EP-07-point-location
+app,be52623,2026-10-26T22:42:08Z,FM,feat,0,feat(location): explain the capture and show the positions on a map
+app,adac028,2026-10-26T22:42:08Z,FM,feat,0,feat(location): capture the position once at the start and the completion
+app,5405191,2026-10-23T23:36:07Z,FM,merge,1,Merge pull request #54 from FieldOps-Project/feat/EP-06-start-and-complete
+app,ab5e69c,2026-10-23T23:34:53Z,FM,fix,0,fix(inspections): keep the start confirmation up and word local failures
+app,fe5a099,2026-10-23T23:30:43Z,FM,feat,0,feat(inspections): summarize and complete the inspection offline
+app,dd0427e,2026-10-23T23:30:43Z,FM,feat,0,feat(inspections): start the inspection on the device
+app,acccb87,2026-10-23T23:29:21Z,FM,merge,1,Merge pull request #53 from FieldOps-Project/feat/EP-06-checklist
+app,0b1c2ae,2026-10-23T23:27:59Z,FM,fix,0,fix(checklist): apply the failure rules to yes/no items and harden saving
+app,e70a184,2026-10-23T23:23:01Z,FM,feat,0,feat(checklist): render the checklist from the snapshot with progress
+app,8b33c12,2026-10-23T23:23:01Z,FM,feat,0,feat(checklist): one component per response type
+app,c747b51,2026-10-23T23:23:01Z,FM,feat,0,feat(design-system): add OptionButton and taller multi-line inputs
+app,432cb57,2026-10-23T23:23:01Z,FM,feat,0,feat(checklist): validate each answer from its type and snapshot rules
+app,ff74446,2026-10-23T23:16:36Z,FM,merge,1,Merge pull request #52 from FieldOps-Project/feat/EP-06-inspection-detail
+app,cfaf58b,2026-10-23T23:15:15Z,FM,fix,0,fix(inspections): report every blocking reason and never show 100% while blocked
+app,551d2e6,2026-10-23T23:12:25Z,FM,feat,0,feat(inspections): show the stored inspection with its contextual action
+app,69f0379,2026-10-23T23:12:25Z,FM,feat,0,"feat(domain): checklist progress, pending items and contextual action"
+app,87772b3,2026-10-23T23:10:59Z,FM,merge,1,Merge pull request #51 from FieldOps-Project/feat/EP-06-home-and-list
+app,b3369b4,2026-10-23T23:09:33Z,FM,fix,0,fix(home): count each block with the filter it opens
+app,7b7b52a,2026-10-23T23:06:23Z,FM,feat,0,feat(inspections): list stored inspections with local search and filters
+app,fa33d5d,2026-10-23T23:06:23Z,FM,feat,0,feat(home): show the day's work and pending sync on the home screen
+app,8657e89,2026-10-23T23:02:33Z,FM,merge,1,Merge pull request #50 from FieldOps-Project/feat/EP-06-local-inspection-store
+app,95773a2,2026-10-23T23:01:08Z,FM,fix,0,fix(database): serialize writes on one connection and harden the outbox
+app,3183810,2026-10-23T22:55:08Z,FM,docs,0,docs: describe the on-device store and the demo inspections
+app,db8f535,2026-10-23T22:55:08Z,FM,feat,0,feat(sync): download inspections and send the outbox
+app,3417eae,2026-10-23T22:55:08Z,FM,feat,0,feat(database): store inspections and the outbox in SQLite
+app,33aa05e,2026-10-23T22:55:08Z,FM,feat,0,feat(domain): model inspections and checklists after the mobile contract
+app,acce5ec,2026-10-23T22:55:08Z,FM,chore,0,"chore(deps): add sqlite, crypto, date picker and form libraries"
+app,7292f81,2026-10-14T14:20:31Z,FM,merge,1,Merge pull request #48 from FieldOps-Project/feat/EP-02-token-refresh
+app,0b6f662,2026-10-14T14:18:56Z,FM,merge,1,Merge branch 'develop' into feat/EP-02-token-refresh
+app,c4301a4,2026-10-14T14:18:16Z,FM,merge,1,Merge pull request #47 from FieldOps-Project/feat/EP-02-secure-session
+app,a406951,2026-10-14T14:16:35Z,FM,merge,1,Merge branch 'develop' into feat/EP-02-secure-session
+app,3c04418,2026-10-14T14:16:26Z,FM,merge,1,Merge pull request #49 from FieldOps-Project/chore/EP-01-expo-sdk-patches
+app,18995ab,2026-10-14T14:16:15Z,FM,fix,0,fix(api): never revive or expire a session signed out during a refresh
+app,448868b,2026-10-14T14:16:15Z,FM,refactor,0,refactor(api): keep the session endpoints in one module
+app,9589bbc,2026-10-14T14:03:46Z,FM,docs,0,docs(readme): document token renewal and offline behaviour
+app,2946df4,2026-10-14T14:03:46Z,FM,feat,0,feat(auth): end the session with a notice when the server refuses renewal
+app,3a08206,2026-10-14T14:03:46Z,FM,feat,0,feat(api): renew an expired session once and share the refresh between requests
+app,e59afdf,2026-10-14T14:15:04Z,FM,docs,0,docs(adr): leave multi-user pending work to EP-08
+app,4fee0e6,2026-10-14T14:15:04Z,FM,fix,0,fix(auth): do not hold sign-out on the token revocation
+app,56f3200,2026-10-14T14:08:21Z,FM,chore,0,chore(deps): align packages with the latest Expo SDK 57 patches
+app,cd5d8aa,2026-10-14T14:03:24Z,FM,docs,0,docs(tokens): state that the touch target is in density-independent units
+app,6d0eb0f,2026-10-14T14:03:24Z,FM,docs,0,docs(readme): describe the real session and link the contributing guide
+app,7285e38,2026-10-14T14:03:24Z,FM,docs,0,docs(adr): record sign-out behaviour with pending synchronization
+app,3d3c5d1,2026-10-14T14:03:24Z,FM,feat,0,feat(auth): confirm before signing out
+app,85fae3f,2026-10-14T14:03:24Z,FM,feat,0,feat(auth): revoke the refresh token on sign-out and restore only complete sessions
+app,4411e82,2026-10-14T14:03:23Z,FM,test,0,test(app): resolve the @/ alias in jest
+app,bd50c96,2026-09-18T00:49:28Z,FM,merge,1,Merge pull request #46 from FieldOps-Project/feat/EP-02-login-screen
+app,7877934,2026-09-18T00:47:02Z,FM,feat,0,feat(auth): authenticate login screen against the API
+app,6924812,2026-08-21T23:32:23Z,FM,merge,1,Merge pull request #45 from FieldOps-Project/chore/EP-01-ci-pipeline
+docs,6855062,2026-08-21T23:58:39Z,PD,docs,0,docs: TAP
+docs,2cee672,2026-08-21T23:54:38Z,PD,docs,0,docs: sprint1s
+docs,807e9e4,2026-08-21T23:42:18Z,PD,outro,0,Add files via upload
+docs,c903708,2026-08-14T23:16:47Z,FM,outro,0,Fix formatting of group members list in README
+docs,bae885c,2026-08-14T23:16:33Z,FM,outro,0,Update README with contribution guidelines
+docs,13eb2e8,2026-08-14T23:16:16Z,FM,docs,0,docs: add members name
+docs,b6c42a1,2026-08-11T17:38:51Z,JV,merge,1,Merge pull request #7 from FieldOps-Project/docs/EP-01-repo-conventions
+docs,772dae3,2026-08-11T17:37:47Z,JV,docs,0,docs(repo): add contributing guide and issue/pr templates
+docs,e97e704,2026-08-10T23:15:26Z,FM,refactor,0,refactor(docs): move Notion documentation under notion directory
+docs,6828dfd,2026-08-10T23:03:49Z,FM,outro,0,first commit

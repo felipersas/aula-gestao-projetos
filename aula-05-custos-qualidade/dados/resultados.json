@@ -1,0 +1,729 @@
+{
+ "md": {
+  "folha": "| Item | Origem da marca | Aplicáveis | ✔ Conforme | ✘ Não conforme | N/A ou sem checklist | % conforme |\n| --- | --- | ---: | ---: | ---: | ---: | ---: |\n| D1 – Código em branch própria, via PR | autodeclarado | 47 | 44 | 3 | 8 | 94% |\n| D2 – Lint e verificação de tipos passando | autodeclarado | 47 | 44 | 3 | 8 | 94% |\n| D3 – Sem segredos versionados | autodeclarado | 47 | 44 | 3 | 8 | 94% |\n| D4 – Sem logs sensíveis | autodeclarado | 47 | 44 | 3 | 8 | 94% |\n| D5 – Comportamento de erro tratado | autodeclarado | 47 | 44 | 3 | 8 | 94% |\n| D6 – Documentação/README atualizados | autodeclarado | 47 | 43 | 4 | 8 | 91% |\n| D7 – Evidência de funcionamento anexada | autodeclarado | 47 | 19 | 28 | 8 | 40% |\n| D8 – Revisado por outra pessoa | autodeclarado | 45 | 4 | 41 | 10 | 9% |\n| V1 – Branch no padrão <tipo>/EP-xx-slug | verificado | 55 | 49 | 6 | 0 | 89% |\n| V2 – Título em Conventional Commits | verificado | 55 | 52 | 3 | 0 | 95% |\n| V3 – PR aberto contra `develop` | verificado | 55 | 51 | 4 | 0 | 93% |\n| V4 – Issue/card vinculado (Closes #N) | verificado | 55 | 41 | 14 | 0 | 75% |\n| V5 – CI verde (onde havia CI) | verificado | 39 | 38 | 1 | 16 | 97% |\n| V6 – Revisão registrada por outra pessoa | verificado | 55 | 6 | 49 | 0 | 11% |\n| V7 – Testes no diff (feat/fix/refactor) | verificado | 47 | 40 | 7 | 8 | 85% |\n| V8 – README/OpenAPI/ADR no diff (feat) | verificado | 40 | 33 | 7 | 15 | 82% |\n",
+  "folha_issues": "| Verificação (issue fechada) | Aplicáveis | ✔ | ✘ | % conforme |\n| --- | ---: | ---: | ---: | ---: |\n| Tem responsável designado | 60 | 47 | 13 | 78% |\n| Vinculada a milestone (sprint) | 60 | 59 | 1 | 98% |\n| Citada por PR mergeado (Closes/ref) | 60 | 41 | 19 | 68% |\n| Fechada até o fim da sprint prevista | 60 | 12 | 48 | 20% |\n| Critérios de aceitação marcados (≥1 caixa) | 60 | 0 | 60 | 0% |\n| Checklist de DoD marcado (≥1 caixa) | 60 | 1 | 59 | 2% |\n",
+  "pareto_defeitos": "| Categoria de defeito (commits `fix`) | Peso (sev.) | Qtd. | % | % acum. | Peso×Qtd. | % acum. ponderado |\n| --- | ---: | ---: | ---: | ---: | ---: | ---: |\n| Layout e acabamento visual | 1 | 20 | 40,0% | 40,0% | 20 | 82,0% |\n| Regras de negócio e fluxo de inspeção | 5 | 8 | 16,0% | 56,0% | 40 | 43,7% |\n| Acessibilidade e estados de interface | 3 | 6 | 12,0% | 68,0% | 18 | 91,8% |\n| Build, tipos, dependências e testes | 3 | 5 | 10,0% | 78,0% | 15 | 100,0% |\n| Contrato, erros e migrações da API | 5 | 4 | 8,0% | 86,0% | 20 | 71,0% |\n| Sessão, autenticação e segurança | 10 | 4 | 8,0% | 94,0% | 40 | 21,9% |\n| Persistência, offline e sincronização | 10 | 3 | 6,0% | 100,0% | 30 | 60,1% |\n",
+  "pareto_nc": "| Não conformidade de processo (folha de verificação) | Qtd. de marcas ✘ | % | % acum. |\n| --- | ---: | ---: | ---: |\n| Revisão registrada por outra pessoa | 49 | 41,2% | 41,2% |\n| Evidência de funcionamento anexada | 28 | 23,5% | 64,7% |\n| Issue/card vinculado (Closes #N) | 14 | 11,8% | 76,5% |\n| Testes no diff (feat/fix/refactor) | 7 | 5,9% | 82,4% |\n| README/OpenAPI/ADR no diff (feat) | 7 | 5,9% | 88,2% |\n| Branch no padrão <tipo>/EP-xx-slug | 6 | 5,0% | 93,3% |\n| PR aberto contra `develop` | 4 | 3,4% | 96,6% |\n| Título em Conventional Commits | 3 | 2,5% | 99,2% |\n| CI verde (onde havia CI) | 1 | 0,8% | 100,0% |\n",
+  "p_chart": "| Sprint | Período | Concluídas (k) | Total (n) | p = k/n | LIC | LSC | Fechadas no prazo | Sinal |\n| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |\n| S1 | 10/08–21/08 | 15 | 17 | 88,2% | 28,4% | 98,5% | 8/17 | — |\n| S2 | 24/08–04/09 | 17 | 17 | 100,0% | 28,4% | 98,5% | 2/17 | acima do LSC |\n| S3 | 07/09–18/09 | 7 | 10 | 70,0% | 17,8% | 100,0% | 0/10 | — |\n| S4 | 21/09–02/10 | 10 | 14 | 71,4% | 24,8% | 100,0% | 0/14 | — |\n| S5 | 05/10–16/10 | 5 | 8 | 62,5% | 12,4% | 100,0% | 0/8 | — |\n| S6 | 19/10–30/10 | 2 | 13 | 15,4% | 23,4% | 100,0% | 0/13 | abaixo do LIC |\n| S7 | 02/11–13/11 | 3 | 14 | 21,4% | 24,8% | 100,0% | 2/14 | abaixo do LIC |\n| S8 | 16/11–27/11 | 0 | 10 | 0,0% | 17,8% | 100,0% | em curso | S8 em curso: não avaliada |\n"
+ },
+ "coleta_utc": "2026-11-18T14:56:20+00:00",
+ "prs": {
+  "total": 69,
+  "mergeados": 61,
+  "triviais": 6,
+  "fechados_sem_merge": 5,
+  "abertos": 3,
+  "amostra": 55,
+  "por_repo": {
+   "backend": 17,
+   "frontend": 17,
+   "app": 21,
+   "docs": 0
+  }
+ },
+ "issues": {
+  "total": 117,
+  "fechadas": 60,
+  "abertas": 57,
+  "rotulos_defeito": 0,
+  "abertas_sem_responsavel": 44,
+  "backend_abertas_sem_resp": 21
+ },
+ "ci_primeiro_run": {
+  "backend": "23/10/2026",
+  "frontend": "31/08/2026",
+  "app": "21/08/2026"
+ },
+ "folha": {
+  "n": 55,
+  "itens": [
+   {
+    "item": "D1  Código em branch própria, via PR",
+    "conformes": 44,
+    "nao_conformes": 3,
+    "nao_aplicavel": 8,
+    "aplicaveis": 47,
+    "pct": 93.61702127659575
+   },
+   {
+    "item": "D2  Lint e verificação de tipos passando",
+    "conformes": 44,
+    "nao_conformes": 3,
+    "nao_aplicavel": 8,
+    "aplicaveis": 47,
+    "pct": 93.61702127659575
+   },
+   {
+    "item": "D3  Sem segredos versionados",
+    "conformes": 44,
+    "nao_conformes": 3,
+    "nao_aplicavel": 8,
+    "aplicaveis": 47,
+    "pct": 93.61702127659575
+   },
+   {
+    "item": "D4  Sem logs sensíveis",
+    "conformes": 44,
+    "nao_conformes": 3,
+    "nao_aplicavel": 8,
+    "aplicaveis": 47,
+    "pct": 93.61702127659575
+   },
+   {
+    "item": "D5  Comportamento de erro tratado",
+    "conformes": 44,
+    "nao_conformes": 3,
+    "nao_aplicavel": 8,
+    "aplicaveis": 47,
+    "pct": 93.61702127659575
+   },
+   {
+    "item": "D6  Documentação/README atualizados",
+    "conformes": 43,
+    "nao_conformes": 4,
+    "nao_aplicavel": 8,
+    "aplicaveis": 47,
+    "pct": 91.48936170212765
+   },
+   {
+    "item": "D7  Evidência de funcionamento anexada",
+    "conformes": 19,
+    "nao_conformes": 28,
+    "nao_aplicavel": 8,
+    "aplicaveis": 47,
+    "pct": 40.42553191489362
+   },
+   {
+    "item": "D8  Revisado por outra pessoa",
+    "conformes": 4,
+    "nao_conformes": 41,
+    "nao_aplicavel": 10,
+    "aplicaveis": 45,
+    "pct": 8.88888888888889
+   },
+   {
+    "item": "V1  Branch no padrão <tipo>/EP-xx-slug",
+    "conformes": 49,
+    "nao_conformes": 6,
+    "nao_aplicavel": 0,
+    "aplicaveis": 55,
+    "pct": 89.0909090909091
+   },
+   {
+    "item": "V2  Título em Conventional Commits",
+    "conformes": 52,
+    "nao_conformes": 3,
+    "nao_aplicavel": 0,
+    "aplicaveis": 55,
+    "pct": 94.54545454545455
+   },
+   {
+    "item": "V3  PR aberto contra `develop`",
+    "conformes": 51,
+    "nao_conformes": 4,
+    "nao_aplicavel": 0,
+    "aplicaveis": 55,
+    "pct": 92.72727272727273
+   },
+   {
+    "item": "V4  Issue/card vinculado (Closes #N)",
+    "conformes": 41,
+    "nao_conformes": 14,
+    "nao_aplicavel": 0,
+    "aplicaveis": 55,
+    "pct": 74.54545454545455
+   },
+   {
+    "item": "V5  CI verde (onde havia CI)",
+    "conformes": 38,
+    "nao_conformes": 1,
+    "nao_aplicavel": 16,
+    "aplicaveis": 39,
+    "pct": 97.43589743589743
+   },
+   {
+    "item": "V6  Revisão registrada por outra pessoa",
+    "conformes": 6,
+    "nao_conformes": 49,
+    "nao_aplicavel": 0,
+    "aplicaveis": 55,
+    "pct": 10.909090909090908
+   },
+   {
+    "item": "V7  Testes no diff (feat/fix/refactor)",
+    "conformes": 40,
+    "nao_conformes": 7,
+    "nao_aplicavel": 8,
+    "aplicaveis": 47,
+    "pct": 85.1063829787234
+   },
+   {
+    "item": "V8  README/OpenAPI/ADR no diff (feat)",
+    "conformes": 33,
+    "nao_conformes": 7,
+    "nao_aplicavel": 15,
+    "aplicaveis": 40,
+    "pct": 82.5
+   }
+  ]
+ },
+ "cruzamento": {
+  "d2_declarado": 44,
+  "d2_ci_sucesso": 34,
+  "d2_ci_falha": 1,
+  "d2_sem_ci": 9,
+  "d6_declarado": 43,
+  "d6_com_doc": 28,
+  "d8_declarado": 4,
+  "d8_com_review": 2,
+  "revisados_total": 6,
+  "aprovados_total": 5,
+  "pediram_mudancas": 1,
+  "com_checklist": 47,
+  "sem_checklist": 8,
+  "merge_ci_vermelho": [
+   "app#46"
+  ],
+  "base_fora_develop": [
+   "frontend#35",
+   "backend#51",
+   "backend#53",
+   "backend#54"
+  ]
+ },
+ "issues_folha": {
+  "fechadas": 60,
+  "itens": {
+   "Tem responsável designado": 47,
+   "Vinculada a milestone (sprint)": 59,
+   "Citada por PR mergeado (Closes/ref)": 41,
+   "Fechada até o fim da sprint prevista": 12,
+   "Critérios de aceitação marcados (≥1 caixa)": 0,
+   "Checklist de DoD marcado (≥1 caixa)": 1
+  },
+  "den_prazo": 59,
+  "ac_marcados": 0,
+  "ac_total": 518,
+  "dod_marcados": 3,
+  "dod_total": 955
+ },
+ "pareto_defeitos": {
+  "total": 50,
+  "itens": [
+   {
+    "categoria": "Layout e acabamento visual",
+    "n": 20,
+    "pct": 40.0,
+    "acum": 40.0
+   },
+   {
+    "categoria": "Regras de negócio e fluxo de inspeção",
+    "n": 8,
+    "pct": 16.0,
+    "acum": 56.0
+   },
+   {
+    "categoria": "Acessibilidade e estados de interface",
+    "n": 6,
+    "pct": 12.0,
+    "acum": 68.0
+   },
+   {
+    "categoria": "Build, tipos, dependências e testes",
+    "n": 5,
+    "pct": 10.0,
+    "acum": 78.0
+   },
+   {
+    "categoria": "Contrato, erros e migrações da API",
+    "n": 4,
+    "pct": 8.0,
+    "acum": 86.0
+   },
+   {
+    "categoria": "Sessão, autenticação e segurança",
+    "n": 4,
+    "pct": 8.0,
+    "acum": 94.0
+   },
+   {
+    "categoria": "Persistência, offline e sincronização",
+    "n": 3,
+    "pct": 6.0,
+    "acum": 100.0
+   }
+  ],
+  "corte": 5,
+  "ponderado": [
+   {
+    "categoria": "Sessão, autenticação e segurança",
+    "n": 40,
+    "pct": 21.85792349726776,
+    "acum": 21.85792349726776
+   },
+   {
+    "categoria": "Regras de negócio e fluxo de inspeção",
+    "n": 40,
+    "pct": 21.85792349726776,
+    "acum": 43.71584699453552
+   },
+   {
+    "categoria": "Persistência, offline e sincronização",
+    "n": 30,
+    "pct": 16.39344262295082,
+    "acum": 60.10928961748634
+   },
+   {
+    "categoria": "Contrato, erros e migrações da API",
+    "n": 20,
+    "pct": 10.92896174863388,
+    "acum": 71.03825136612022
+   },
+   {
+    "categoria": "Layout e acabamento visual",
+    "n": 20,
+    "pct": 10.92896174863388,
+    "acum": 81.9672131147541
+   },
+   {
+    "categoria": "Acessibilidade e estados de interface",
+    "n": 18,
+    "pct": 9.836065573770492,
+    "acum": 91.80327868852459
+   },
+   {
+    "categoria": "Build, tipos, dependências e testes",
+    "n": 15,
+    "pct": 8.19672131147541,
+    "acum": 100.0
+   }
+  ],
+  "corte_pond": 5,
+  "total_pond": 183,
+  "por_repo": {
+   "backend": 6,
+   "frontend": 30,
+   "app": 14
+  },
+  "por_autor": {
+   "JV": 5,
+   "AF": 31,
+   "FM": 14
+  }
+ },
+ "pareto_nc": {
+  "total": 119,
+  "itens": [
+   {
+    "categoria": "Revisão registrada por outra pessoa",
+    "n": 49,
+    "pct": 41.1764705882353,
+    "acum": 41.1764705882353
+   },
+   {
+    "categoria": "Evidência de funcionamento anexada",
+    "n": 28,
+    "pct": 23.529411764705884,
+    "acum": 64.70588235294117
+   },
+   {
+    "categoria": "Issue/card vinculado (Closes #N)",
+    "n": 14,
+    "pct": 11.764705882352942,
+    "acum": 76.47058823529412
+   },
+   {
+    "categoria": "Testes no diff (feat/fix/refactor)",
+    "n": 7,
+    "pct": 5.882352941176471,
+    "acum": 82.3529411764706
+   },
+   {
+    "categoria": "README/OpenAPI/ADR no diff (feat)",
+    "n": 7,
+    "pct": 5.882352941176471,
+    "acum": 88.23529411764706
+   },
+   {
+    "categoria": "Branch no padrão <tipo>/EP-xx-slug",
+    "n": 6,
+    "pct": 5.042016806722689,
+    "acum": 93.27731092436974
+   },
+   {
+    "categoria": "PR aberto contra `develop`",
+    "n": 4,
+    "pct": 3.361344537815126,
+    "acum": 96.63865546218487
+   },
+   {
+    "categoria": "Título em Conventional Commits",
+    "n": 3,
+    "pct": 2.5210084033613445,
+    "acum": 99.15966386554622
+   },
+   {
+    "categoria": "CI verde (onde havia CI)",
+    "n": 1,
+    "pct": 0.8403361344537815,
+    "acum": 100.0
+   }
+  ],
+  "corte": 4
+ },
+ "ci": {
+  "runs": 99,
+  "por_repo": {
+   "backend": {
+    "success": 11
+   },
+   "frontend": {
+    "success": 34,
+    "cancelled": 4,
+    "failure": 2
+   },
+   "app": {
+    "success": 36,
+    "failure": 8,
+    "cancelled": 1
+   }
+  },
+  "falhas": 10,
+  "falhas_passo": {
+   "Testes": 1,
+   "Verificar tipos": 1,
+   "Validar configuração do Expo": 8
+  },
+  "taxa_sucesso": 89.01098901098901,
+  "total_ci_validos": 91
+ },
+ "hist": {
+  "tamanho": {
+   "n": 55,
+   "media": 1073.418181818182,
+   "mediana": 936.0,
+   "dp": 1005.7335758486068,
+   "minimo": 2.0,
+   "maximo": 5344.0,
+   "q1": 382.0,
+   "q3": 1386.5,
+   "p90": 2235.2,
+   "assimetria": 1.907044300366473
+  },
+  "tempo_pr": {
+   "n": 55,
+   "media": 34.99033333333334,
+   "mediana": 0.14277777777777778,
+   "dp": 93.99693855665181,
+   "minimo": 0.0044444444444444444,
+   "maximo": 503.47805555555556,
+   "q1": 0.044305555555555556,
+   "q3": 1.9002777777777777,
+   "p90": 105.26283333333336,
+   "assimetria": 3.4422088046744705
+  },
+  "lead": {
+   "n": 55,
+   "media": 65.06766666666667,
+   "mediana": 0.2791666666666667,
+   "dp": 165.85353771859334,
+   "minimo": 0.016666666666666666,
+   "maximo": 821.4872222222223,
+   "q1": 0.11833333333333335,
+   "q3": 12.185555555555554,
+   "p90": 192.73644444444443,
+   "assimetria": 3.2312262397368126
+  },
+  "pct_tam_gt_1000": 43.63636363636363,
+  "pct_tam_gt_400": 74.54545454545455,
+  "pct_merge_lt_1h": 74.54545454545455,
+  "pct_merge_lt_24h": 81.81818181818183,
+  "pct_merge_gt_72h": 16.363636363636363,
+  "n_merge_gt_72h": 9,
+  "n_tam_gt_1000": 24,
+  "n_tam_gt_400": 41,
+  "n_merge_lt_1h": 41,
+  "por_repo": {
+   "backend": {
+    "n": 17,
+    "tam_mediana": 845.0,
+    "tempo_mediano": 0.9769444444444444
+   },
+   "frontend": {
+    "n": 17,
+    "tam_mediana": 1092.0,
+    "tempo_mediano": 0.1463888888888889
+   },
+   "app": {
+    "n": 21,
+    "tam_mediana": 939.0,
+    "tempo_mediano": 0.09472222222222222
+   }
+  }
+ },
+ "p_chart": {
+  "pbar": 0.6344086021505376,
+  "sprints": {
+   "1": {
+    "n": 17,
+    "k": 15,
+    "no_prazo": 8,
+    "p": 0.8823529411764706,
+    "sigma": 0.11680409130322812,
+    "ucl": 0.984820876060222,
+    "lcl": 0.28399632824085325,
+    "u2": 0.8680167847569938,
+    "l2": 0.4008004195440814,
+    "sinal": ""
+   },
+   "2": {
+    "n": 17,
+    "k": 17,
+    "no_prazo": 2,
+    "p": 1.0,
+    "sigma": 0.11680409130322812,
+    "ucl": 0.984820876060222,
+    "lcl": 0.28399632824085325,
+    "u2": 0.8680167847569938,
+    "l2": 0.4008004195440814,
+    "sinal": "acima do LSC"
+   },
+   "3": {
+    "n": 10,
+    "k": 7,
+    "no_prazo": 0,
+    "p": 0.7,
+    "sigma": 0.1522939025923029,
+    "ucl": 1.0,
+    "lcl": 0.1775268943736289,
+    "u2": 0.9389964073351434,
+    "l2": 0.3298207969659318,
+    "sinal": ""
+   },
+   "4": {
+    "n": 14,
+    "k": 10,
+    "no_prazo": 0,
+    "p": 0.7142857142857143,
+    "sigma": 0.12871183974509506,
+    "ucl": 1.0,
+    "lcl": 0.2482730829152524,
+    "u2": 0.8918322816407278,
+    "l2": 0.3769849226603475,
+    "sinal": ""
+   },
+   "5": {
+    "n": 8,
+    "k": 5,
+    "no_prazo": 0,
+    "p": 0.625,
+    "sigma": 0.1702697593775604,
+    "ucl": 1.0,
+    "lcl": 0.12359932401785645,
+    "u2": 0.9749481209056584,
+    "l2": 0.29386908339541684,
+    "sinal": ""
+   },
+   "6": {
+    "n": 13,
+    "k": 2,
+    "no_prazo": 0,
+    "p": 0.15384615384615385,
+    "sigma": 0.13357058856014284,
+    "ucl": 1.0,
+    "lcl": 0.23369683647010908,
+    "u2": 0.9015497792708234,
+    "l2": 0.36726742503025195,
+    "sinal": "abaixo do LIC"
+   },
+   "7": {
+    "n": 14,
+    "k": 3,
+    "no_prazo": 2,
+    "p": 0.21428571428571427,
+    "sigma": 0.12871183974509506,
+    "ucl": 1.0,
+    "lcl": 0.2482730829152524,
+    "u2": 0.8918322816407278,
+    "l2": 0.3769849226603475,
+    "sinal": "abaixo do LIC"
+   },
+   "8": {
+    "n": 10,
+    "k": 0,
+    "no_prazo": 0,
+    "p": 0.0,
+    "sigma": 0.1522939025923029,
+    "ucl": 1.0,
+    "lcl": 0.1775268943736289,
+    "u2": 0.9389964073351434,
+    "l2": 0.3298207969659318,
+    "sinal": "S8 em curso: não avaliada"
+   }
+  },
+  "total_k": 59,
+  "total_n": 103
+ },
+ "imr": {
+  "semanas": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15
+  ],
+  "valores": [
+   63.0,
+   6.0,
+   13.0,
+   39.0,
+   0.0,
+   8.0,
+   8.0,
+   37.0,
+   0.0,
+   14.0,
+   214.0,
+   3.0,
+   1.0,
+   163.0,
+   32.0
+  ],
+  "cl": 40.642857142857146,
+  "mrbar": 60.92307692307692,
+  "ucl": 202.69824175824175,
+  "lcl": -121.41252747252747,
+  "ucl_mr": 199.0356923076923,
+  "mr": [
+   57.0,
+   7.0,
+   26.0,
+   39.0,
+   8.0,
+   0.0,
+   29.0,
+   37.0,
+   14.0,
+   200.0,
+   211.0,
+   2.0,
+   162.0
+  ],
+  "sinais": [
+   11
+  ],
+  "sem15": 32.0,
+  "maior_sequencia_mesmo_lado": 9,
+  "zero": [
+   5,
+   9
+  ],
+  "total": 601.0,
+  "pico": {
+   "semana": 11,
+   "valor": 214.0
+  },
+  "pct_pico_top3": 73.21131447587355,
+  "n_semanas_zero_ou_abaixo": 3,
+  "sinais_mr": [
+   11,
+   12
+  ]
+ },
+ "concentracao": {
+  "backend": {
+   "total": 129,
+   "top": "JV",
+   "n_top": 114,
+   "pct": 88.37209302325581,
+   "dist": {
+    "GR": 9,
+    "FM": 1,
+    "JV": 114,
+    "PD": 2,
+    "AF": 1,
+    "BOT": 2
+   }
+  },
+  "frontend": {
+   "total": 368,
+   "top": "AF",
+   "n_top": 276,
+   "pct": 75.0,
+   "dist": {
+    "AF": 276,
+    "JV": 92
+   }
+  },
+  "app": {
+   "total": 95,
+   "top": "FM",
+   "n_top": 93,
+   "pct": 97.89473684210526,
+   "dist": {
+    "FM": 93,
+    "JV": 2
+   }
+  },
+  "docs": {
+   "total": 9,
+   "top": "FM",
+   "n_top": 5,
+   "pct": 55.55555555555556,
+   "dist": {
+    "PD": 3,
+    "FM": 5,
+    "JV": 1
+   }
+  }
+ },
+ "dispersao": {
+  "tam_x_tempo": {
+   "a": -0.6506238143404246,
+   "b": 0.11802295204168511,
+   "r": 0.06383684193586474,
+   "r2": 0.004075142388344579,
+   "p": 0.6433461719279798,
+   "n": 55,
+   "spearman": -0.10387501831056689,
+   "pearson_bruto": -0.03504092359407943
+  },
+  "tam_x_dod": {
+   "a": 78.13040388964352,
+   "b": -0.0014482019319075755,
+   "r": -0.07081698099334395,
+   "r2": 0.005015044797011639,
+   "p": 0.6362002488464458,
+   "n": 47,
+   "spearman": -0.20774500793489795
+  },
+  "plan_x_concl": {
+   "a": -6.968220338983052,
+   "b": 1.1588983050847457,
+   "r": 0.6667400822089161,
+   "r2": 0.4445423372239522,
+   "p": 0.10188787633334448,
+   "n": 7,
+   "spearman": 0.6546536707079773
+  },
+  "tam_x_arquivos": {
+   "a": 9.237646508232384,
+   "b": 0.010602145093790757,
+   "r": 0.5348457430541316,
+   "r2": 0.2860599688631261,
+   "p": 2.5920751005714057e-05,
+   "n": 55,
+   "spearman": 0.8768533881235733
+  }
+ }
+}

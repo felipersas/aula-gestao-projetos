@@ -1,0 +1,51 @@
+repo,data,autor,mensagem,categoria
+app,2026-08-11,FM,fix(typescript): declare CSS module so typecheck passes on a fresh clone,"Build, tipos, dependências e testes"
+app,2026-08-11,FM,fix(design-system): render white label on solid buttons,Layout e acabamento visual
+app,2026-10-14,FM,fix(auth): do not hold sign-out on the token revocation,"Sessão, autenticação e segurança"
+app,2026-10-14,FM,fix(api): never revive or expire a session signed out during a refresh,"Sessão, autenticação e segurança"
+app,2026-10-23,FM,fix(database): serialize writes on one connection and harden the outbox,"Persistência, offline e sincronização"
+app,2026-10-23,FM,fix(home): count each block with the filter it opens,Regras de negócio e fluxo de inspeção
+app,2026-10-23,FM,fix(inspections): report every blocking reason and never show 100% while blocked,Regras de negócio e fluxo de inspeção
+app,2026-10-23,FM,fix(checklist): apply the failure rules to yes/no items and harden saving,Regras de negócio e fluxo de inspeção
+app,2026-10-23,FM,fix(inspections): keep the start confirmation up and word local failures,Regras de negócio e fluxo de inspeção
+app,2026-11-11,FM,fix(sync): judge a cancellation by its attempts and link late answers,"Persistência, offline e sincronização"
+app,2026-11-11,FM,fix(evidence): keep relative paths and tell failed uploads apart,"Persistência, offline e sincronização"
+app,2026-11-11,FM,fix(scanner): recover from failed lookups and never skip the comparison,Regras de negócio e fluxo de inspeção
+app,2026-11-11,FM,fix(scanner): confirm the divergence on every way out of the screen,Regras de negócio e fluxo de inspeção
+app,2026-11-11,FM,fix(equipment): answer every scanned code and accept codes up to the backend limit,Regras de negócio e fluxo de inspeção
+backend,2026-09-26,JV,fix(test): add AuditEventRepository mock to ClientAuthorizationTest,"Build, tipos, dependências e testes"
+backend,2026-09-26,JV,fix(test): add AuditEventRepository mock to InspectionSiteAuthorizationTest,"Build, tipos, dependências e testes"
+backend,2026-09-26,JV,fix(openapi): refine security rules and OpenAPI contract tests,"Contrato, erros e migrações da API"
+backend,2026-09-28,AF,fix(db): renumber the audit events migration to resolve the duplicate V5,"Contrato, erros e migrações da API"
+backend,2026-10-19,JV,fix(api): upgrade springdoc to 3.1.1 for Spring Boot 4 compatibility,"Build, tipos, dependências e testes"
+backend,2026-10-23,JV,fix(api): return 409 instead of 500 on data integrity violations,"Contrato, erros e migrações da API"
+frontend,2026-08-31,AF,fix(web): generate route types before type checking,"Build, tipos, dependências e testes"
+frontend,2026-09-01,AF,fix(web): declare the panel language and title in the document,Acessibilidade e estados de interface
+frontend,2026-09-28,AF,fix(auth): fit the login screen in the viewport without scrolling,Layout e acabamento visual
+frontend,2026-09-28,AF,fix(ui): stop the global focus outline from doubling the text field ring,Acessibilidade e estados de interface
+frontend,2026-10-23,AF,fix(ui): stop the global focus outline from overriding field rings,Acessibilidade e estados de interface
+frontend,2026-10-23,AF,fix(auth): reject control characters in post-login redirect targets,"Sessão, autenticação e segurança"
+frontend,2026-10-23,AF,fix(api): describe inactive client and site errors as scheduling errors,"Contrato, erros e migrações da API"
+frontend,2026-10-23,AF,fix(ui): use the singular when the list has a single result,Layout e acabamento visual
+frontend,2026-11-09,AF,fix(shell): drop the double space in the environment label,Layout e acabamento visual
+frontend,2026-11-09,AF,fix(shell): scroll the whole menu column on short screens,Layout e acabamento visual
+frontend,2026-11-09,AF,fix(shell): keep a single readable space in the environment label,Layout e acabamento visual
+frontend,2026-11-09,AF,fix(dashboard): keep the status tiles of a row at the same height,Layout e acabamento visual
+frontend,2026-11-09,AF,fix(dashboard): keep the card watermarks clear of the titles,Layout e acabamento visual
+frontend,2026-11-09,AF,fix(dashboard): align the side cards with the status card,Layout e acabamento visual
+frontend,2026-11-09,AF,fix(dashboard): show the card watermarks whole and vertically centred,Layout e acabamento visual
+frontend,2026-11-09,AF,fix(templates): keep the situation badge on a single line,Layout e acabamento visual
+frontend,2026-11-09,AF,fix(templates): fit the template list on notebook widths,Layout e acabamento visual
+frontend,2026-11-09,AF,fix(templates): widen the model column only on very wide screens,Layout e acabamento visual
+frontend,2026-11-09,AF,fix(templates): fit the new template page on one screen,Layout e acabamento visual
+frontend,2026-11-09,AF,fix(shell): contain absolute elements in the scrolling content area,Layout e acabamento visual
+frontend,2026-11-11,AF,fix(templates): focus the issues dialog only when it opens,Acessibilidade e estados de interface
+frontend,2026-11-11,AF,fix(templates): keep the template name whole in the builder trail,Layout e acabamento visual
+frontend,2026-11-11,AF,fix(ui): center the confirmation dialog,Layout e acabamento visual
+frontend,2026-11-18,AF,fix(inspections): keep the scheduled time and scope the detail skeleton,Regras de negócio e fluxo de inspeção
+frontend,2026-11-18,AF,fix(non-conformities): show the list as unavailable without the API and keep the severity order,Acessibilidade e estados de interface
+frontend,2026-11-18,AF,fix(non-conformities): keep the inspection code on one line and demo starts in the past,Layout e acabamento visual
+frontend,2026-11-18,AF,"fix(evidence): block non-raster files, revalidate the cache and keep photo names","Sessão, autenticação e segurança"
+frontend,2026-11-18,AF,fix(review-queue): keep the list up when the count fails and align the review filter,Acessibilidade e estados de interface
+frontend,2026-11-18,AF,fix(review-queue): fit the queue table so the review button is always visible,Layout e acabamento visual
+frontend,2026-11-18,AF,fix(review-queue): drop the horizontal scroll and use cards below 1280px,Layout e acabamento visual
